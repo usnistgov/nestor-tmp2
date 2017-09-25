@@ -1,4 +1,4 @@
-New Tokens ,P|S|I|X|R|U (Problem/solution/item/stop word/redundant/unsure),Preferred label,Notes
+token,NE,alias,note
 replace,S,,
 unit,I,,
 motor,I,,

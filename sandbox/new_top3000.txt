@@ -1,0 +1,3000 @@
+replace
+unit
+motor
+spindle
+leak
+valve
+replaced
+fault
+bar
+inop
+accumulator
+repair
+remove
+hydraulic
+table
+check
+coolant
+bearing
+break
+screw
+pump
+machine
+alarm
+broken
+chip
+sensor
+instal
+charge
+switch
+adjust
+new
+conveyor
+issue
+operator
+pressure
+brush
+part
+complete
+clamp
+clean
+request
+drive
+cable
+reset
+head
+loose
+loader
+power
+brush unit
+tool
+air
+belt
+rebuild
+base
+turret
+jam
+feed
+filter
+line
+clear
+swap
+oil
+axis
+chip conveyor
+collet
+30bar
+bad
+ok
+hp
+control
+return
+need
+prox
+breaker
+load
+accumulator check
+hydraulic leak
+iemca
+low
+clutch
+inverter
+chain
+wear
+wire
+hose
+drill
+run
+seal
+level
+end
+fuse
+index
+vogel
+cycle
+check request
+report
+tank
+flow
+shaft
+connection
+position
+b
+hyd
+st#2
+accumulator check request
+stop
+contactor
+track
+main
+pin
+bolt
+trip
+stick
+2
+set
+door
+operator level
+wheel
+saw
+overload
+start
+lock
+lp
+plug
+strip
+see
+xd
+cylinder
+cut
+module
+order
+removed
+failure
+change
+pulley
+cnc
+coolant pump
+detector
+1
+bar loader
+shut
+gear
+forward
+charge to 30bar
+conveyor jam
+spindle bearing
+lube
+turn
+time
+3
+solenoid
+limit
+indexing
+online
+transport
+housing
+station
+damage
+fitting
+close
+speed
+feeder
+remove and replace
+chip conveyor jam
+cause
+spare
+50bar
+miss
+auto
+controller
+work
+actuator
+drop
+slide
+offload
+pack
+table index
+encoder
+fan
+align
+st#3
+thread
+tag
+clamp screw
+gripper
+nok
+mount
+drill detector
+open
+st#10
+st#6
+add
+electrical
+4
+dog
+install
+st#12
+st#11
+st#5
+rear
+not
+pendant
+pick
+tube
+fall
+detection
+travel
+short
+power pack
+ball
+tighten
+rebuilt
+correct
+guard
+xd head
+cover
+table indexing
+light
+require
+plate
+base clean
+roll
+vogel lube
+fail
+steve
+guide
+stock
+blow
+airline
+pusher
+bar feeder
+reinstall
+attachment
+5
+6
+move
+coolant leak
+counter
+drain
+z
+ring
+coil
+sensor cable
+trip breaker
+feeder chain
+grind
+shift
+st#8
+bearing wear
+holder
+chute
+jaw
+play
+25bar
+lead
+cool
+loading
+coolant flow
+hyd leak
+replace motor
+adjustment
+conveyor inop
+ball screw
+cross
+limit switch
+interlock
+key
+starter
+rod
+st#7
+adjusted
+reverse
+nut
+home
+spring
+wo
+wo not
+fee
+high
+bearing replace
+st#4
+stick forward
+wiring
+hsk
+piston
+bear
+bind
+pump motor
+safety
+tool detection
+hot
+noise
+disc
+bar end
+major
+tag accumulator
+replace broken
+rupture
+chain break
+unit inop
+bracket
+motor starter
+flow control
+o
+st#9
+pump inop
+control valve
+check accumulator
+multiple
+fit
+bar change
+hydraulics
+cleaned
+come
+jpm
+cross drill
+rack
+1/2
+flag
+plc
+z axis
+relay
+tensioned
+chip conveyor inop
+tony
+proximity
+excessive
+unit stick
+rotator
+brake
+x
+scraper
+place
+vertical
+regulate
+blade
+brush unit stick
+replace with new
+11
+block
+hold
+lube fault
+unit stick forward
+bar feeder chain
+o/t
+return line
+1/2 table
+connector
+face
+cabinet
+regulate wheel
+basket
+replace bad
+weld
+unit remove
+st
+charge to 50bar
+hour
+vogel lube fault
+invert
+stroke
+10
+recess
+bearings
+arrive
+broken wire
+prox cable
+bar feed
+gate
+shelf
+box
+go
+offload conveyor
+worn
+o/t fault
+st2
+lead screw
+burn
+russ
+ready
+bearing check
+strip screw
+gauge
+leaking
+leak hydraulic
+20bar
+unit motor
+slow
+floor
+intake
+catcher
+air line
+panel
+tray
+connect
+iemca track
+b turret
+replacement
+signal
+bladder
+blow fuse
+section
+overload fault
+air leak
+flange
+drive belt
+selector
+seize
+unable
+alex
+hub
+review
+7
+replace seal
+cable replace
+clean request
+setup
+thread unit
+contactor overload
+cleaning
+collision
+push
+rotate
+screen
+fire
+indexer
+alignment
+ruptured
+broken screw
+channel
+performance
+performance module
+service
+selector switch
+confirm
+base clean request
+drive fault
+missing
+proximity switch
+day
+replaced bearing
+bent
+temp
+support
+electrical cabinet
+ok at 30bar
+function
+seal replace
+motor contactor
+finish
+assess
+tool holder
+norm
+major hydraulic
+brush unit motor
+rebuilt unit
+hit
+wrong
+repeat
+present
+major hydraulic leak
+replace cable
+stay
+increase
+water
+hole
+chatter
+laser
+release
+rotation
+chuck
+tension
+pm
+collector
+pull
+saw unit
+error
+get
+blown
+brush unit inop
+replaced fuse
+properly
+good
+oil leak
+slip
+indexing valve
+leave
+replace hydraulic
+hand
+detector inop
+cut off unit
+charge accumulator
+servo
+hp coolant
+button
+sub spindle
+sub
+lift
+x axis
+roller
+chamfer
+26/80
+part catcher
+upper
+program
+link
+load in auto
+monitor
+broken bar
+length
+fluid
+w/o
+spin
+b.
+area
+grind wheel
+inventory
+complete cycle
+instal new
+marcel
+clear chip
+table indexing valve
+broken bar feeder
+output
+carrier
+gage
+exit
+pusher dog
+check and charge
+center
+gasket
+vibration
+hsk clamp
+face travel
+read
+40bar
+c/o
+heat
+c
+air pressure
+35/60
+feed pressure
+contact
+travel flag
+sequence
+board
+drill detector inop
+table down prox
+replace blow
+overtime
+allow
+2nd
+rail
+clutch disc
+hydraulic hose
+long
+12
+free
+overheat
+low coolant
+coolant pump inop
+loader chain
+retain
+belt replace
+hydraulic fluid
+oper
+believe
+replace leak
+drift
+grease
+main spindle
+drum
+dk
+cross drill head
+drill head
+p/o
+hp pump
+cool fan
+prox sensor
+vacuum
+tight
+rate
+drive shaft
+condition
+tip
+pressure switch
+chip guard
+denis
+make
+step
+gio
+extend
+bus
+mode
+loss
+reg
+balance
+take
+tech
+installed
+purchase
+float
+breaker trip
+valve replace
+robot
+hydraulic return
+hose replace
+motor overload
+light inop
+replace o
+damaged
+ejector
+horseshoe
+paddle
+z1
+filtermist
+cnc unit
+chip breaker
+latch
+tear
+chiller
+reference
+aim
+possible
+supply
+hs
+control panel
+prevent
+glass
+bulb
+assembly
+8
+replace valve
+clutch adjust
+use
+solenoid valve
+detection inop
+call
+cam
+reg wheel
+base need
+cycle power
+pipe
+replace blow fuse
+filter replace
+splash
+excess
+disconnect
+10bar
+arm
+conveyor belt
+heavy
+swapped
+saw attachment
+hydraulic filter
+replace sensor
+spindle bearing wear
+index o/t
+table index o/t
+po
+production
+belt break
+send
+overtime fault
+anthony
+20
+low pressure
+adjust table
+face travel flag
+circuit
+offset
+chip breaker valve
+hydraulic line
+breaker valve
+knoll
+skimmer
+regulator
+mill
+zero
+saw head
+replaced sensor
+tool head
+fabricate
+bleeder
+room
+e
+torque
+c axis
+st#2 spindle
+vogel tank
+bar load
+door interlock
+set screw
+modify
+frl
+crash
+coolant pump motor
+respond
+screw strip
+coolant hose
+bushing
+coolant tank
+coupling
+right
+cycled
+bowl
+realign
+leg
+truck
+float switch
+reconnected
+replaced vogel
+loose connection
+stuck
+loader inop
+hang
+bearing and seal
+have
+hydraulic pressure
+stack
+sync
+st#5 brush unit
+st#5 brush
+blown fuse
+stock clamp
+second
+jammed
+lose
+jose
+a.
+detect
+post
+machine run
+jet
+spare unit
+crack
+clog
+bar clamp
+cutoff
+arbor
+change shaft
+lp accumulator
+separator
+jc
+push dog
+skirt
+break screw
+catch
+lower
+flag sensor
+run in auto
+time cycle
+spindle bearing replace
+bar not feed
+linear
+variation
+approach
+e stop
+synchronize
+mist
+hydraulic pump
+conveyor motor
+replaced broken
+fully
+low coolant flow
+broken clutch
+sp#6
+actual
+loud
+replace coolant
+hydraulic return line
+loader fault
+conveyor clutch
+false
+disassemble
+nest
+st#2 drill
+table valve
+jon
+motor inop
+loose wire
+index o/t fault
+1st
+resolve
+retract
+trace
+action
+broken clutch disc
+vary
+rear of iemca
+leak at rear
+rings
+replace table
+bar loading
+reboot
+st#14
+jump
+offline
+remove broken
+shuttle
+bar loader chain
+loader chain break
+tool detection inop
+remount
+collet close
+borrow
+3rd
+drop part
+hydraulic motor
+reset breaker
+replaced motor
+replace miss
+utility
+replace spindle
+hog
+spindle drive
+feed chain
+pressure gauge
+tool clamp
+id
+inside
+seat
+engage
+setting
+clip
+washer
+remove and clean
+impellor
+milling
+wand
+sprocket
+recess unit
+slug
+spool
+chamfer unit
+see attachment
+receiver
+attach
+>
+dresser
+oil pump
+rhe
+orifice
+extension
+monitoring
+input
+clamp jaw
+soft
+parameter
+pad
+reject
+pivot
+delay
+x3
+receive
+rewire
+hydraulic oil
+new motor
+14
+manually
+part order
+valve leak
+unit jam
+filter housing
+9
+prox switch
+power to machine
+switch inop
+retainer
+range
+wheel control
+replace motor starter
+provide
+coolant line
+wheel control valve
+repeatedly
+tripping
+depth
+pp
+smog
+replace screw
+hp at 50bar
+up/down
+check valve
+cycled power
+replace clamp
+issue report
+counter inop
+spindle shut
+bar loader fault
+table up/down
+bleeder valve
+st#1
+replace switch
+turret 3
+maintenance
+electric
+cutoff unit
+oil line
+small
+maint
+fine
+press
+high pressure
+expose
+mfg
+swap with spare
+need new
+workzone
+motor replace
+workzone light
+high speed
+pressure fault
+workzone light inop
+fuse replace
+care
+switch break
+open/close
+v
+leak at iemca
+correctly
+mag
+axis ball screw
+axis ball
+colant
+proper
+cable connection
+base cleaning
+wash
+replace break
+spindle contactor
+magazine
+reach
+exit chute
+hard
+exhaust
+fix
+mm
+battery
+hyd filter
+cord
+platform
+power supply
+spindle carrier
+remain
+25bar charge
+hs counter
+shear
+oal
+voltage
+manual
+grm
+john
+doug
+b side turret
+cable break
+recess spindle
+cool unit
+lp at 25bar
+table drift
+stem
+fork truck
+chip conveyor clutch
+ot fault
+install chip
+ot
+tool oil
+air tool oil
+air tool
+fork
+bush
+screw and replace
+sam
+feeder chain break
+1000
+single
+cleared
+internal
+chuck cylinder
+draw
+st#3 spindle
+freed
+unjammed
+unit trip
+lt module
+take care
+replace fuse
+see head
+1700
+keep
+clear alarm
+randomly
+wait
+ss
+replace bearing
+st#11 spindle
+st#2 drill detector
+replace airline
+spindle swap
+feed line
+selector switch break
+clamp screw strip
+access
+spindle contactor overload
+checked
+weld repair
+stock stop
+away
+lubricate
+tighten loose
+programming
+replaced air
+on/off
+replaced hs
+od
+coolant pressure
+entry
+consume
+clean base
+elect
+hsk clamp screw
+feed fault
+random
+bleed
+learn mode
+25
+opers
+pin break
+minor
+st#10 spindle
+replace performance module
+gerry
+operate
+replace performance
+door lock
+replace clutch
+lt
+bag
+reapired
+ml
+replace pin
+lp at 30bar
+learn
+laser tool
+safety switch
+smog hog
+vacuum pump
+replace worn
+dress
+air hose
+hose leak
+locate
+track replace
+faulty
+gib
+gearbox
+stripper
+rack drive
+3.2
+u
+sleeve
+spec
+adjuster
+replace filter
+swivel
+couple
+reduced
+lid
+h11
+bob
+main coolant
+pressure alarm
+lift pump
+sat
+sludge
+site glass
+rag
+lubrication
+> charge
+flow rate
+7/20
+collector tube
+manifold
+site
+inverter rod
+overtravel
+adjust rod
+robo
+remnant
+power module
+guard break
+inverter guard
+insert
+fill
+feed tube
+feed rate
+loader issue
+steve salley
+salley
+30
+1st shift
+guidance
+st#3 recess
+reattached
+hs4
+allen
+vogel leak
+switch replace
+bolt break
+fabricate new
+consumption
+store
+not start
+leak side b.
+location
+c/o unit
+retrieve
+repair leak
+switch fault
+separate
+noisy
+st#2 bearing
+tool slide
+h15
+siezed
+36/100
+adjust screw
+blank
+repair wire
+replace drive
+backup
+life
+breaker reset
+replace prox
+non
+alarm clear
+multiple alarm
+check bearing
+electrical connection
+replace fitting
+likely
+look
+proximity sensor
+parts
+pan
+ground
+turret not lock
+replace damage
+automation
+reducer
+escapement
+metering
+new bar
+brush unit jam
+dress unit
+relocate
+lucifer valve
+table indexing fault
+15bar
+indexing fault
+spray
+lucifer
+end of spindle
+load valve
+head bearing
+lube tank
+2x
+spindle valve
+tooling
+circuit breaker
+motor fall
+hp coolant pump
+leak at inverter
+replace solenoid
+replace relay
+flat
+difficult
+accumulator drop
+leak hydraulic fluid
+replace with spare
+st#12 brush unit
+st#12 brush
+detach
+component
+order and instal
+hp at 40bar
+sensor inop
+replace encoder
+magazine tray
+inverter fault
+activate
+2 break
+module replace
+cycling
+straighten
+st#2 tool
+bar stop
+jamming
+jam forward
+magnet
+week
+adjust clutch
+machine fault
+24v
+rupture bladder
+bar pusher
+wrap
+st#2 valve
+adjust sensor
+back
+turret remove
+transport collision
+task
+unit trip breaker
+reduce
+operator report
+broken feeder chain
+h32
+ra
+spindle seize
+replaced hs counter
+part receiver
+index valve
+motor failure
+accumulator charge
+broken feeder
+st#6 vertical
+tumbler
+datum
+mill head
+drawbar
+reel
+stock reel
+fette
+hs5
+u axis
+cup
+gripper sensor
+double
+collet housing
+quill
+3x
+table rack
+disabled
+paint
+chip stripper
+gallon
+control pivot
+lock pin
+spindle move
+smell
+appear
+microphone
+w
+feed motor
+pick and place
+end play
+polarity
+y1
+handle
+y1 axis
+invert valve
+regulating
+regulating wheel
+lever
+headstock
+close roll
+drum filter
+broken pin
+broken collet
+sp#2
+part separator
+paper
+scale
+disconnected
+excessive play
+apart
+soon
+run with clip
+pressure coolant
+reservoir
+swap performance
+swap performance module
+travel flag sensor
+repair broken
+replaced track
+flag sensor cable
+tornos
+machine shut
+feed chain break
+encoder cable
+prior
+cb
+replace with rebuilt
+motor overload fault
+1/2 table valve
+wrench
+see clamp
+loader valve
+contactor replace
+guide channel
+address
+sensor cable replace
+suspect
+charge hp
+b spindle
+mechanism
+shim
+main drive
+lp ok
+loose screw
+mist collector
+mount bolt
+sound
+blown fuse replace
+frequency
+movement
+converter
+kick
+trunk
+leak from base
+recognize
+swap valve
+spindle motor
+diagnose
+wo not start
+screw loose
+rear door
+collet break
+new cable
+st#12 motor
+24
+3rd shift
+overhead
+'s
+lyle
+removed base
+available
+cart
+valve stack
+motor too hot
+wo not clear
+channel guide
+thermal
+tell
+hyd flange
+closing
+outlet
+coolant alarm
+valve rebuild
+not clear
+guide bushing
+brush unit trip
+sinat
+o ring
+cam switch
+actual issue
+50
+tap
+overtemp
+occur
+see unit
+index ot
+accumulator ok
+leak coolant
+different
+plug in connector
+unload
+need rebuild
+adjust flow
+motor cable
+vogel fault
+replace sensor cable
+overfill
+clear jam
+patrick
+xd unit
+cut oil
+chip jam
+metering valve
+pressure leave
+remove spindle
+table index valve
+pwer
+35/60 spindle
+potentiometer
+work hold collet
+table index ot
+protection
+onsite
+mechanical
+replace flow
+detect inop
+leak fit
+index ot fault
+bypass
+t
+unit belt
+standard
+accumulator pressure
+air flow
+steel
+new bearing
+unit replace
+hold collet
+work hold
+tightened
+st#3 spindle bearing
+line replace
+clean and reinstall
+union
+hp ok
+st#4 spindle
+problem
+needs
+stop alarm
+collision alarm
+remove break
+filter tank
+inverter inop
+tool detector
+purchase and instal
+contactor fault
+device
+debris
+referrenced
+connection repair
+ms32
+replace fit
+arrival
+height
+fixture
+rebuild table
+functional
+leak hose
+st#2 tool detection
+extract
+spinner
+mach
+9/14
+lhe
+operators
+offload conveyor belt
+reset trip breaker
+reset trip
+vogel unit
+laser tool detection
+poor
+air cylinder
+part offload conveyor
+part offload
+replace air
+contactor overload fault
+40bar charge
+sensor replace
+drive gear
+replace motor contactor
+motor overheat
+smoking
+push rod
+pcm
+broken air
+clutch slip
+conveyor clutch slip
+replace pump
+see blade
+wheel spindle
+st#3 recess spindle
+crank
+sensor and cable
+assist
+turret leak
+sa
+replaced leak
+dylan
+z axis ball
+broken chain
+active
+drive pulley
+large
+emergency
+unit on shelf
+emergency retract
+vent
+pick up part
+hand crank
+rebuild spindle
+loose fitting
+clamp pressure
+replace hydraulic hose
+sec
+brush head
+ring replace
+t98
+blower
+follow
+hyd hose
+broken bolt
+accept
+60bar
+grinder
+clamp spool
+feb
+satellite
+cylindar
+hex
+hook
+break bolt
+soft limit
+11/14
+burn smell
+idler
+broken ejector
+solonoid
+magnetic
+rubber
+chip scraper
+exit conveyor
+harness
+meet
+linear motor
+hinge
+fette head
+drive tube
+touch
+gap
+part ejector
+cpu
+lathe
+h7
+john pyers
+relief
+motor temp
+barnes
+chuck pressure
+collar
+reassemble
+psi
+raise
+bundle
+pyers
+clutch adjustment
+terminal
+cycle stop
+clamp fault
+leak at grind
+inverter fail
+overheat alarm
+replaced vogel unit
+complete index
+unit breaker
+closed
+taper
+broken disc
+brush unit breaker
+bladder replace
+mount bracket
+replaced broken clutch
+assessment
+transport collision alarm
+doug patrick
+controler
+leak at base
+return home
+replace xd
+9/13
+position sensor
+missing screw
+deliver
+dog holder
+make noise
+operator task
+horizontal
+bar clamp fault
+light stack
+leak air
+control box
+broken clamp
+screw remove
+iemca face travel
+machine to base
+sp#1
+secure
+require rebuild
+induplate
+sensor adjust
+piece
+motor hot
+earlier
+come under control
+flow control valve
+motor connection
+see clamp screw
+instead
+speed counter
+glue
+high speed counter
+drill detection
+previously
+replaced coolant
+shut off machine
+remove break screw
+relate
+st2 low
+screw break
+replace hydraulic return
+temp alarm
+motor run
+disc on clutch
+prod
+clean area
+overflow
+feed speed
+st#10 valve
+45bar
+fault clear
+replaced disc
+new accumulator
+iemca need
+bar change occur
+change occur
+unused
+iemca face
+reset button
+pcs100
+offload automation
+flag prox
+inverter guard break
+st2 pressure
+motor seize
+axis overtravel
+motor trip
+motor trip breaker
+hose connection
+ruptured air
+ruptured air line
+drill detect
+2nd shift
+pick off collet
+transport plate
+a/c
+rebuild unit
+clear chip jam
+lose part
+unit bearing
+clutch fault
+unscrew
+roland
+screw in saw
+clamp screw crack
+grind noise
+flag prox cable
+horn
+pressure drop
+spinlde
+replace main
+head remove
+base drain
+collet open/close
+v bowl
+hp accumulator
+steve replace
+100
+pin and replace
+10/4
+unit 2
+mag filter
+reprogrammed
+faulting
+spot
+sensor cable break
+replace drive belt
+mid
+wringer
+sticking
+ran
+st#4 valve
+replace see
+adjust flow control
+smoke
+heavy vibration
+screw crack
+sp#3
+new unit
+multiple time
+leak hyd
+motor mount
+dust
+lube pump
+holder clamp
+46
+iso
+tool holder clamp
+fuse blow
+new valve
+offload robot
+operator remove
+open sensor
+return line replace
+rinse tank
+motor fan
+rinse
+presetter
+b transport
+clearing
+cast
+pete
+spill
+st#2 spindle bearing
+head attachment
+coolanr
+inventory unit
+rear of machine
+dresser control valve
+siemens
+dry
+inlet
+canister
+replace rupture
+motor and pulley
+motor pulley
+spindle remove
+upper belt
+st#13
+pedestal
+actuate
+bench
+chuck cylinder pressure
+cylinder pressure
+hs2
+clean and reset
+air filter
+eject
+part chute
+old
+hydraulic fault
+quick
+increased
+machine base
+dresser control
+charge and tag
+base position
+machine start
+h40
+process
+fast
+red
+spindle collet
+motor with spare
+funnel
+retain bolt
+remove turret
+instruct
+table index overtime
+actuator replace
+port
+limit alarm
+stay forward
+lock alarm
+collet close roll
+index overtime
+plunger
+service filtermist
+replace ruptured
+pump impellor
+able
+spindle rebuild
+far
+build
+extended
+travel limit
+interlock key
+part track
+pack leak
+change overtime fault
+jam clear
+power pack leak
+6/20
+encoder replace
+bar change overtime
+bar loader inop
+pcs
+attempt
+know
+change overtime
+exchanger
+zone
+roller switch
+cool unit fault
+bar feed chain
+liner
+spindle leak hydraulic
+hp to 50bar
+low fault
+ir
+sc4
+6/28
+unit motor fall
+gerry costa
+removal
+drive alarm
+charge to lp
+costa
+apply
+lp 30bar
+swarf
+moved
+replace feed
+replaced hose
+slide roll
+collet closing
+spindle leak
+6/24
+hydraulic motor overload
+unit jam forward
+adjust air
+enable
+unit fault
+demag
+rot
+replaced belt
+master
+hs3
+ir scan
+cleared fault
+inverter valve
+current
+scan
+function properly
+slide roll loose
+roll loose
+main tool
+unknown
+wash conveyor
+jumping
+leak report
+bounce
+iemca flag
+prox 's
+dia
+cross drill unit
+knob
+cyclinder
+servo alarm
+clamp alarm
+replace bulb
+broken lead screw
+high pressure coolant
+drill unit
+replaced see
+major coolant
+major coolant leak
+tool position
+bar clamp alarm
+speed change
+unit o/t fault
+retain nut
+fuse block
+toggle
+replaced hydraulic
+accordingly
+6/7
+linear potentiometer
+spline
+grind wheel control
+replace belt
+unit o/t
+broken lead
+utility unit o/t
+st#11 spindle bearing
+utility unit
+o rings
+tube extension
+replace pusher
+35
+filter change
+unit swap
+hydromat
+main motor
+s4
+shaft wear
+fuse in control
+main tool slide
+vogel lube leak
+lube leak
+bearing bad
+reading
+schedule
+show
+feel
+td
+heat exchanger
+ducting
+entire
+milling head
+transport inop
+replace pusher dog
+impeller
+spindle bearing bad
+speed change shaft
+rotary
+h38
+unit rebuild
+sc11
+head stock
+doc
+air regulator
+main head stock
+appear ok
+bearing failure
+elaso
+fee pressure
+loose motor
+lh
+broken ejector sleeve
+hs5 drive
+7/11
+main head
+bar fee
+ball valve
+screw failure
+release valve
+drain and clean
+scroll
+gripper open
+ejector sleeve
+o/s
+valve plate
+chamber
+touch screen
+point
+assy
+subspindle
+steam
+door safety
+hinge belt
+10 mm
+zs3
+center shaft
+s
+robo drive
+lift cylinder
+identify
+prox adjust
+speed limit
+inner
+mm hex
+continue
+knoll controller
+fanuc
+glide
+disable
+b axis
+lift pump motor
+pneumatic
+loader tray
+linkage
+encoder couple
+intake filter
+squeeling
+sloppy
+drill detector st#2
+scrap
+motor brake
+leak from rear
+rebuilt and store
+tool life
+80
+16
+result
+miss bolt
+st#2 inop
+polished
+disc replace
+clutch disc replace
+replaced unit
+drip
+unit safety
+set properly
+lead screw shaft
+chip guard need
+brake motor
+install new
+head wear
+lp 25bar
+part catcher basket
+z1 ball
+z1 ball screw
+drill head bearing
+match
+collet open
+remount brush unit
+valve leak hydraulic
+head bearing wear
+trepan
+channel 2
+detector st#2
+grate
+chamfer unit belt
+increase air
+safety guard
+splash cover
+leak at loader
+replace drill detector
+replace drill
+part washer
+unit return
+replace broken disc
+ram
+valve stem
+ram inop
+dwell
+vogel system fault
+clutch drive
+plug connection
+4 hour
+screw shaft
+go under control
+ap
+ejection
+replace see attachment
+catcher basket
+rupture hydraulic
+rupture hydraulic hose
+replace shaft
+hyd return
+replace hsk
+hyd return line
+3cr
+valve issue
+bearing check request
+wide
+lock screw
+require cleaning
+tensioned loose
+rapid
+st#10 hsk clamp
+15
+ready alarm
+replace safety
+11/15
+bearings wear
+replace xd head
+hot alarm
+chip in turret
+table down sensor
+low pressure fault
+leak from dress
+guard need
+bowl inop
+0600
+spindle bearing check
+lp at 10bar
+cell
+bronze
+turret coolant
+infeed
+leak dresser control
+conduit
+leak dresser
+unit breaker trip
+casting
+replace accumulator
+1100
+hammer
+rupture airline
+program adjustment
+in/out
+x axis ball
+motor hang
+load shuttle
+rub
+turrets
+sealer
+11/30
+polarity swap
+rpm
+pump leak
+loading fault
+breaker repeatedly
+replace leak dresser
+can not
+unit safety guard
+leak at reg
+p/p
+transformer
+track inop
+inventoried
+dimension
+replace flow control
+drop 20
+rebuild request
+upright
+amp
+ewag
+pocket
+st#10 hsk
+brush unit safety
+12/13
+can
+table speed
+fee bowl
+remount brush
+cts
+wire break
+conveyor fault
+bar loading fault
+repeatedly trip
+glass scale
+reg wheel control
+technician
+belt too tight
+bearing ok
+trigger
+bad contactor
+cold
+display
+motor protection
+bring
+belt tear
+replace o rings
+kit
+st#9 brush
+trip overload
+counting
+norm clear alarm
+double counting
+high speed change
+overload breaker
+norm clear
+broken door
+increase feed
+new screw
+tumbler inop
+tablet
+replace hp
+bad cable
+tune
+spin in collet
+part spin
+transport gripper
+st#5 motor
+neveux
+fh3
+bore
+10bar charge
+contactors
+delivery
+bad relay
+return prox
+support bearing
+i5
+move forward
+iemca encoder
+5 time
+exceed
+hp oil
+load bar
+norm neveux
+loader not load
+loose sensor
+eng
+operator clear
+pressure gage
+broken mount
+3 break
+zero position
+broken air line
+replaced air line
+completely
+i2
+chord
+output board
+set too low
+pressure set
+k11
+k10
+machine online
+accumulator on iemca
+hernandez
+jose hernandez
+pressure low
+work order
+damage thread
+prox chord
+90
+bad bearing
+transfer
+brass
+hydraulic flange
+unit home
+h8
+power switch
+nest of chip
+switch cable
+loading bracket
+mc
+weekend
+work zone
+6/21
+motor contactor replace
+8/1
+replaced entire
+unit need
+nnzx3
+spare part
+left
+st#7 spindle
+x4
+7/13
+stick at 1/2
+unable to adjust
+8/2
+scream
+main fault
+loose pulley
+output module
+offload conveyor inop
+approach valve
+24 hour
+replace controller
+tony plug
+pully
+7/25
+plc battery
+need replace
+collet not close
+anca
+7/26
+7/21
+bearing instal
+guage
+slug detector
+clear by hand
+a. replace
+code
+coolant clearing
+measure
+table stick
+6/27
+valve nok
+adjust see
+rot cam switch
+rot cam
+rupture hp coolant
+coolant hose replace
+hp coolant hose
+rupture hp
+shut down machine
+find
+end bearing
+vrf
+incomplete
+dreher
+clamp break
+major leak
+binding
+ship
+cam switch fault
+issue remain
+bag filter
+paint require
+search
+bus duct
+refill
+adjust table index
+index speed
+table index speed
+bad connection
+duct
+grind room
+replace contactor
+st#8 valve
+valve with rebuilt
+50 micron
+micron
+motor remove
+weld shut
+st#9 brush unit
+detection wire
+coolant level
+consume alarm
+belt tension
+hose mfg
+replace control
+chip conveyor belt
+er
+er module
+pump order
+mill clutch fault
+mill clutch
+table rebuild
+pulley hub
+activated
+vfd
+shut machine
+coolant miss
+miss or consume
+leak in spindle
+broken coolant
+spndle
+cause part
+nn
+unit run
+slowly
+cnc hydraulic
+cnc hydraulic filter
+servo drive
+drive not ready
+shelf unit
+saw blade
+conveyor jamming
+tool clamp screw
+warm
+sp#5
+new pump
+center cylinder
+oil skimmer
+b hydraulic
+temporary
+b turret wo
+turret wo not
+turret wo
+drain pipe
+power pack filter
+aligned
+pack filter
+pulley shaft
+10/3
+120v
+leak repair
+ruptured hose
+6 spindle
+microswitch
+pulley and belt
+stop mid
+opening
+nuts
+add chip guard
+hsk tool
+requires
+cnc selector switch
+cnc selector
+new switch
+1700 motor
+confirmed
+fiber
+optic
+fiber optic
+prox cable break
+timing
+stay run
+add chip
+auto cycle
+pump replace
+replace with inventory
+reboot machine
+switch gear
+unable to remove
+return to prod
+fan inop
+broken clamp screw
+single leg
+chain tension
+adjust loader
+pusher hang
+utility o/t
+0
+controller board
+coolant system alarm
+electrical failure
+machine stop
+motor contactor fault
+detail
+way
+laser td
+pin on see
+axis 3.2
+travel alarm
+strip see
+strip see clamp
+overide
+6/8
+unit overload
+tool detect
+fee belt
+allen wrench tip
+wrench tip
+head with spare
+allen wrench
+flush
+3.1
+wrong time
+utility o/t fault
+workpiece
+hyd oil
+replace coil
+9/27
+line leak
+sensor alarm
+strike
+rectifier
+unit nok
+replaced damage
+st2 prox
+8/24
+robot inop
+offload robot inop
+base leak
+wheel speed
+iso 46
+dust collector
+pump remove
+0bar
+6 break
+swap with shelf
+jpm replace
+accumulator low
+st#6 strip
+strip clamp screw
+strip clamp
+wire on aim
+belt wear
+vogel tank leak
+tank leak
+multiple fault
+motor not spin
+stuck in 1/2
+adjusted sensor
+replace breaker
+severely
+replace table index
+shear pin
+spinning
+replace pendant
+induplate and instal
+filter motor
+coolant pump impellor
+connect plug
+motor cool
+end of bar
+motor loose
+weak
+adjust reverse
+unit not return
+reverse timer
+timer
+cutting
+st#6 spindle
+issue at 30bar
+transport unit
+tie
+hard drive
+need a new
+bear replace
+wire tie
+brian
+replaced spring
+calibrate
+flow report
+removed and clean
+type
+pressure valve
+time per bar
+safety paint
+30/50
+brush motor
+pcm clamp
+axis alarm
+adjust nut
+empty
+return machine
+accumulator read
+door seal
+conveyor not run
+control board
+normal
+45
+main spindle collet
+reject at station
+set table
+12/9
+run hot
+gear reducer
+pump failure
+st#12 spindle
+minute
+add oil
+non maintenance
+st#11 motor
+requested
+new wiring
+replaced vogel tank
+complete cut
+table up/down valve
+up/down valve
+external
+index overtime fault
+pcm clamp screw
+fall off mount
+mount screw
+bar loading sequence
+new order
+shaft and bearing
+bad proximity
+jog
+filter unit
+broken feed
+rebuild table rack
+gripper jaw
+trw
+bearings replace
+engagement
+head and replace
+splice
+adjustment request
+drill detect inop
+01
+transition
+mid cycle
+filter bag
+electrical issue
+replace gripper
+phasing
+make loud noise
+loud noise
+window
+diagnosis
+elbow
+coalescent
+inverter issue
+loading sequence
+prove
+input module
+assess cut
+remove for repair
+filter fault
+replace table indexing
+electric coil
+motor order
+spindle face
+drive belt break
+home sensor
+bar stop alarm
+1/26
+$
+replace turret
+26/80 spindle
+9/23
+clamp jaw set
+hydraulic leak report
+tony need
+jaw set
+i19
+thread unit inop
+ab
+unit 1
+10/19
+sever
+hydraulic tube
+20/80 spindle
+new sensor
+20/80
+eta
+check interlock
+make loud
+vdi
+nc
+coolant missing alarm
+replaced and instal
+st#2 xd head
+near
+broken drive
+receive unit
+expose wire
+travel limit alarm
+excessive hydraulic
+swap pump
+sinico
+coolant missing
+register
+st#8 brush unit
+remove chip
+belt pulley
+missing alarm
+hydraulic consumption
+tank float
+lock nut
+tank float switch
+st#8 brush
+upper belt pulley
+recognition
+st#12 valve
+destroy
+st#2 xd
+mains fault
+draw bar
+bearing report
+mains
+seal and bearing
+report bad
+return sensor
+stripped
+manipulator
+chiller unit
+fee tube
+leak at bar
+cap
+bar feed fault
+20 bar
+power cord
+vibrate
+replaced high
+replaced high speed
+loose connection repair
+chuck pressure leave
+stop pin
+change request
+rebuild complete
+sense
+bearing appear
+actuator replacement
+dye
+broken inverter
+axis error
+st#2 bearing wear
+boot
+roof
+pump trip
+difficulty
+unit and reset
+leak on power
+fuse in bus
+hydraulic pump motor
+add air
+fall off machine
+bus plug
+hydro
+st2 low pressure
+incorrect
+pulley bear
+loose cable
+st#5 tool
+leak oil
+low and charge
+repeat bar
+frequency converter
+r
+prox cable replace
+reverse contactor
+break drill
+new part
+unit break
+swap request
+cb17
+valve speed
+rt
+spindle turn
+rack cylinder
+referencing
+axis over travel
+loose plug
+spray clean
+swap 35/60
+pre
+excessive hydraulic consumption
+power supply replace
+dc power supply
+wash tank
+bad output
+rebuild back end
+tuesday
+pressure not come
+nitrogen
+complete bar
+regulator valve
+operator attempt
+hydraulic main fault
+drill out damage
+ruptured bladder
+compromise by bad
+motor drive
+motor thermal overload
+pendant stop
+30 bar
+table not indexing
+table rack cylinder
+seize motor starter
+check interlock ready
+seize motor
+supply unit
+hydraulic valve
+tap box
+ready of supply
+interlock ready
+liquid
+head clamp
+swap motor
+h22
+tool head clamp
+saturday
+metering valve replace
+24v dc power
+dc
+supply replace
+check ok
+box and bus
+belt slip
+pendant stop pin
+motor drive shaft
+slip off motor
+run but tumbler
+power to sinico
+drive belt slip
+rear collector
+axis servo
+flores
+p/o remove
+damage 24v dc
+7/5
+25 gallon
+trip dog
+hydraulic main
+motor not start
+rear clamp
+downtime
+require on step
+safety paint require
+bearings check request
+lincoln overhead door
+bearings check
+overhead door
+odd
+rack drive seal
+pressure guage
+26bar
+light bulb
+replace light
+alarm 763051 coolant
+replaced drive
+763051 coolant clearing
+replaced inop
+1 of 3
+variable
+763051 coolant
+763051
+logic
+alarm 763051
+clearing system motor
+leak at st#2
+st#11 thread
+lincoln
+7/22
+produce
+lamp
+o/t at 1/2
+rotator rack
+10/5
+invert rod
+plate break
+tooth
+drive sprocket
+original
+seal plate
+excess torque
+st#9 valve
+bar be feed
+removed jam
+bay door
+close when bar
+adjust feed
+indexing slowly
+replaced prox
+adjust feed pressure
+valve not fire
+cross slide
+speed control
+monday
+drive seal
+lincoln overhead
+bay
+st#11 thread unit
+gd
+variable speed
+bored
+h15 cs1001
+bobbin
+workholding
+workholding collet
+alleviate
+cs1001
+head with unit
+scroll on id
+id stem
+h
+broken belt
+swap mill head
+saw stroke
+break in housing
+accumulator good
+st#10 spindle bearing
+machine wo
+machine wo not
+good at 30/50
+oor
+build pressure
+bad output module
+tank sensor
+valve feed
+connection cable
+loading bar
+iemca hydraulic
+unit control
+table reset
+main spindle reservoir
+tensioned bolt
+severely wear
+step drill
+rod disconnected
+recess head
+13
+oper pm
+permit
+spindle reservoir
+load into collet
+removed broken
+10 bar
+oil to main
+tank per day
+interrupt
+overide switch
+switch trip
+aim reject
+riser
+good part
+axial
+7/18
+h29
+plug in pump
+replace pulley
+26bar and charge
+door lock alarm
+spindle and coolant
+rear door lock
+ran learn
+converter b
+frequency converter b
+end be load
+2024
+minor adjustment
+replace chuck
+part receive
+compromise
+bar tip
+ran learn mode
+prevent movement
+line fitting
+noise report
+plug be kick
+tsch
+night
+gripper sensor inop
+tsch 2
+depth of stroke
+shaft replace
+team
+module and activate
+activate spindle
+6/15
+machine lose
+alternate slide
+machine to run
+alternate
+overload maindrive
+would
+maindrive
+replaced screw
+time daily
+daily
+adjust prox
+6/18
+wheel support
+volt
+axis soft
+.010
+pump impellor housing
+impellor housing replace
+axis not go
+leak cut
+latch need
+need repair
+obvious leak
+order and replace
+reset contactor
+cable connector
+prab
+housing replace
+impellor housing
+loading manually
+encoder inop
+obvious
+failing
+feeding
+leak cut oil
+1420
+leak under machine
+threads ok
+threads
+strip thread
+hp collet
+slide not finish
+part counter
+adjust brake
+breaker wo
+length variation
+coolant feed
+compensate
+oil feed
+line into oil
+oil feed line
+accumulator bladder
+jett
+wo not reset
+sam jett
+oil drain
+fresh
+not reset
+breaker wo not
+electronic
+replace vogel
+unit spindle
+coolant level sensor
+level sensor
+position adjust
+6/13
+repair damage
+engagement handle
+replaced bottom xd
+servo motor
+4 time
+swap st#11
+control voltage
+valve solenoid
+rebuild and instal
+immediately
+air present
+counter be double
+increase feed pressure
+bad key
+alter
+h25
+spindle swap request
+bus bar
+jam at st#1
+change shaft wear
+ballast
+loose lock
+48 hour
+loose lock nut
+1/4
+48
+part jam
+turret have chip
+ready signal
+6/16
+1/4 turn
+cause by blow
+sensory
+st#7 valve
+cnc reset
+1/2 table set
+2 shut
+replaced roll
+signal not come
+new filter
+drift at 1/2
+table set
+air valve
+sat 6/18
+allow spindle
+7b
+sort
+unit and spray
+remove the chiller
+diaphram
+diaphram pump
+rvc check valve
+lyle remove
+rvc
+cycle machine
+replace with motor
+pack with swarf
+swarf and bind
+elctrical
+training
+z3
+600
+rvc check
+buildup of chip
+bad motor

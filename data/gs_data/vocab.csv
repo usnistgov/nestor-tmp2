@@ -1,5 +1,5 @@
 tokens,NE,alias,notes,score
-replaced,S,replace,,173.2011554214
+replaced,S,replaced,,173.2011554214
 broken,P,broken,,90.3392355749
 st,I,station,,88.6971759794
 unit,I,unit,,78.13309719600001
@@ -40,7 +40,7 @@ pressure,I,pressure,,35.542845115700004
 parts,I,part,,34.9758137007
 loose,P,loose,,34.0862670526
 alarm,P,alarm,,34.0711844995
-30bar,,30bar,not sure what to do here,33.7238221745
+30bar,U,30bar,not sure what to do here,33.7238221745
 reset,S,reset,,33.2136180897
 chain,I,chain,,33.0188514898
 cable,I,cable,,32.799046564499996
@@ -104,7 +104,7 @@ end,U,end,,17.9153058148
 main,U,main,,17.817103475899998
 position,I,position,,17.817439592
 overload,P,overload,,17.723266381600002
-replace,S,replace,,17.6954297273
+replace,S,replaced,,17.6954297273
 accumulators,I,accumulator,,17.603637465
 connection,I,connector,,17.5646193718
 lp,I,low_pressure,,17.514589529600002
@@ -982,7 +982,7 @@ canister,,,,1.5706097615
 workpiece,,,,1.5677372216
 pos,,,,1.5669517953999998
 polarity,,,,1.5652155540000001
-relaced,S,replace,,1.5649046693000002
+relaced,S,replaced,,1.5649046693000002
 details,,,,1.562133456
 sensing,,,,1.5550362224
 related,,,,1.5506183205000001
@@ -1392,7 +1392,7 @@ acc,I,accumulator,,0.9669345859
 delivery,,,,0.9644913054
 dirty,,,,0.9651117506999999
 grabbing,,,,0.9646532655
-repaced,S,replace,,0.9645033865000001
+repaced,S,replaced,,0.9645033865000001
 scheduled,,,,0.9636407301000001
 strips,,,,0.9599665203
 802t,,,,0.9586468628
@@ -2048,7 +2048,7 @@ ket,,,,0.5420251315
 loctite,,,,0.307014984
 diff,,,,0.541790754
 braoken,P,broken,,0.5414769961
-repalced,S,replace,,0.5413375979999999
+repalced,S,replaced,,0.5413375979999999
 altered,,,,0.5410466418
 h31,,,,0.5404525864
 significant,,,,0.5402759209

@@ -189,17 +189,17 @@ class LayoutLeftKpiSelection:
                                     issue._set_machine_down(texts)
 
                             elif name.endswith(".date_maintenance_work_order_issue"):
-                                if issue._get_date_maintenance_work_order_issue():
-                                    issue._set_date_maintenance_work_order_issue(
-                                        issue._get_date_maintenance_work_order_issue() + texts)
+                                if issue._get_date_workorder_start():
+                                    issue._set_date_workorder_start(
+                                        issue._get_date_workorder_start() + texts)
                                 else:
-                                    issue._set_date_maintenance_work_order_issue(texts)
+                                    issue._set_date_workorder_start(texts)
                             elif name.endswith(".date_maintenance_work_order_close"):
-                                if issue._get_date_maintenance_work_order_close():
-                                    issue._set_date_maintenance_work_order_close(
-                                        issue._get_date_maintenance_work_order_close() + texts)
+                                if issue._get_date_workorder_completion():
+                                    issue._set_date_workorder_completion(
+                                        issue._get_date_workorder_completion() + texts)
                                 else:
-                                    issue._set_date_maintenance_work_order_close(texts)
+                                    issue._set_date_workorder_completion(texts)
                             objects.add(issue)
 
                         elif name.startswith("item."):
@@ -294,17 +294,17 @@ class LayoutLeftKpiSelection:
                                     issue._set_machine_down(texts)
 
                             elif name.endswith(".date_maintenance_work_order_issue"):
-                                if issue._get_date_maintenance_work_order_issue():
-                                    issue._set_date_maintenance_work_order_issue(
-                                        issue._get_date_maintenance_work_order_issue() + texts)
+                                if issue._get_date_workorder_start():
+                                    issue._set_date_workorder_start(
+                                        issue._get_date_workorder_start() + texts)
                                 else:
-                                    issue._set_date_maintenance_work_order_issue(texts)
+                                    issue._set_date_workorder_start(texts)
                             elif name.endswith(".date_maintenance_work_order_close"):
-                                if issue._get_date_maintenance_work_order_close():
-                                    issue._set_date_maintenance_work_order_close(
-                                        issue._get_date_maintenance_work_order_close() + texts)
+                                if issue._get_date_workorder_completion():
+                                    issue._set_date_workorder_completion(
+                                        issue._get_date_workorder_completion() + texts)
                                 else:
-                                    issue._set_date_maintenance_work_order_close(texts)
+                                    issue._set_date_workorder_completion(texts)
                             objects.add(issue)
 
                         elif name.startswith("item."):

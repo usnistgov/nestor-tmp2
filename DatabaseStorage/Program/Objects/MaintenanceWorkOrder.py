@@ -1,9 +1,5 @@
 import collections
 
-from DatabaseStorage.Program.Database.Database_Properties import LabelEdges
-from DatabaseStorage.Program.Database.Database_Properties import NodeHuman
-from DatabaseStorage.Program.Database.Database_Properties import NodeTag
-
 
 class MaintenanceWorkOrder():
     """

@@ -1,0 +1,72 @@
+issue:
+  label:
+    issue: ':ISSUE'
+  properties:
+    description_problem: description_of_problem
+    description_solution: description_of_solution
+    description_cause: description_of_cause
+    description_effect: description_of_effect
+    machine_down: machine_down
+    necessary_part: necessary_part
+    part_in_process: part_in_process
+
+    date_machine_down: date_machine_down
+    date_workorder_start : date_maintenanceworkorder_start
+    date_maintenance_technician_arrive: date_maintenance_technician_arrive
+    date_problem_found: date_problem_found
+    date_part_ordered: date_part_ordered
+    date_part_received: date_part_received
+    date_problem_solve: date_problem_solve
+    date_machine_up: date_machine_up
+    date_workorder_completion : date_maintenanceworkorder_completion
+
+human:
+  label:
+    human: ':HUMAN'
+    technician: ':TECHNICIAN'
+    operator: ':OPERATOR'
+  properties:
+    name: name
+    skills: skills
+    crafts: crafts
+
+machine:
+  label:
+    machine: ':MACHINE'
+    type: ':MACHINE_TYPE'
+  properties:
+    name: name
+    manufacturer: manufacturer
+    locasion: locasion
+    type: type
+
+tag:
+  label:
+    tag: ':TAG'
+    item: ':ITEM'
+    problem: ':PROBLEM'
+    solution: ':SOLUTION'
+    unknown: ':UNKNOWN'
+    problem_item: ':PROBLEM_ITEM'
+    solution_item: ':SOLUTION_ITEM'
+  properties:
+    keyword: keyword
+    synonyms: synonyms
+
+edges:
+  issue_itemasproblem: ':CONTAINS'
+  issue_itemassolution: ':CONTAINS'
+  issue_problem: ':CONTAINS'
+  issue_solution: ':CONTAINS'
+  issue_unknown: ':CONTAINS'
+  issue_problemitem: ':CONTAINS'
+  issue_solutionitem: ':CONTAINS'
+  issue_machine: ':COVERED'
+  issue_operator: ':REQUESTED_BY'
+  issue_technician: ':SOLVE_BY'
+  machine_machinetype: ':IS_A'
+  item_item: ':PARENT_OF'
+  problemitem_problem: ':PART_OF'
+  problemitem_item: ':PART_OF'
+  solutionitem_solution: ':PART_OF'
+  solutionitem_item: ':PART_OF'

@@ -1,8 +1,5 @@
 import collections
 
-from DatabaseStorage.Program.Database.Database_Properties import NodeTag
-from DatabaseStorage.Program.Database.Database_Properties import LabelEdges
-from DatabaseStorage.Program.Database.Database_Properties import NodeIssue
 
 
 class Tag:

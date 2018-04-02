@@ -63,6 +63,6 @@ def timeBetweenIsoStringDates(date1, date2):
     """
     if date1 is None or date1 is "" or date2 is None or date2 is "":
         return None
-    if date1> date2:
+    if date1 > date2:
         return None
     return isoStringToDate(date2) - isoStringToDate(date1)

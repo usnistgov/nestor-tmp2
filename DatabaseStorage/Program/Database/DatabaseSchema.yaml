@@ -43,6 +43,8 @@ machine:
 tag:
   label:
     tag: ':TAG'
+    onegram: ':ONE_GRAM'
+    ngram: ':N_GRAM'
     item: ':ITEM'
     problem: ':PROBLEM'
     solution: ':SOLUTION'

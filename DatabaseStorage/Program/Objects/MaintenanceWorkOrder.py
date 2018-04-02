@@ -179,28 +179,28 @@ class MaintenanceWorkOrder():
         :return: a query to create a new MWO
         """
 
-        query = self.issue.cypher_issue_create_node(var_issue) + "\n"
+        query = self.issue.cypher_issue_createNode(var_issue) + "\n"
 
         if self.machine._get_name() is not None:
-            query += self.machine.cypher_machine_create_node(var_machine) + "\n"
+            query += self.machine.cypher_machine_createNode(var_machine) + "\n"
             query += f'MERGE ({var_issue})-[{self.label_covered}]->({var_machine})' + "\n"
 
             if self.machine._get_machine_type() is not None:
-                query += self.machine.cypher_machine_type_create_node(var_machine_type) + "\n"
+                query += self.machine.cypher_machineType_createNode(var_machine_type) + "\n"
                 query += f'MERGE ({var_machine})-[{self.label_is_a}]->({var_machine_type})' + "\n"
 
         if self.operators is not None and len(self.operators) is not 0:
             for i in range(0, len(self.operators)):
                 if self.operators[i]._get_name() is not None:
                     var_operator = f'{var_operators}{i}'
-                    query += self.operators[i].cypher_operator_create_node(var_operator) + "\n"
+                    query += self.operators[i].cypher_operator_createNode(var_operator) + "\n"
                     query += f'MERGE ({var_issue})-[{self.label_requested}]->({var_operator})' + "\n"
 
         if self.technicians is not None and len(self.technicians) is not 0:
             for i in range(0, len(self.technicians)):
                 if self.technicians[i]._get_name() is not None:
                     var_technician = f'{var_technicians}{i}'
-                    query += self.technicians[i].cypher_technician_create_node(var_technician) + "\n"
+                    query += self.technicians[i].cypher_technician_createNode(var_technician) + "\n"
                     query += f'MERGE ({var_issue})-[{self.label_solve}]->({var_technician})' + "\n"
 
         if self.tag_items is not None and len(self.tag_items) is not 0:
@@ -276,7 +276,7 @@ class MaintenanceWorkOrder():
             for i in range(0, len(self.tag_others)):
                 if self.tag_others[i]._get_keyword() is not None:
                     var_tag_others = f'{var_tag_others}{i}'
-                    query += self.tag_others[i].cypher_tag_create_node(var_tag_others) + "\n"
+                    query += self.tag_others[i].cypher_tag_createNode(var_tag_others) + "\n"
                     query += f'MERGE ({var_issue})-[{self.tag_others[i].label_link}]->({var_tag_others})' + "\n"
 
         return query

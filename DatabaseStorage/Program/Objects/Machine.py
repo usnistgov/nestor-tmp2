@@ -24,7 +24,9 @@ class Machine:
     """
 
     def __init__(self, name=None, manufacturer=None, locasion=None, machine_type=None, databaseInfo=None):
-        self.databaseInfo = databaseInfo
+        self.databaseInfoMachine = databaseInfo['machine']
+        #self.databaseInfoEdges = databaseInfo['edges']
+
         self._set_name(name)
         self._set_manufacturer(manufacturer)
         self._set_locasion(locasion)
@@ -123,8 +125,8 @@ class Machine:
         """
         if self.name is None:
             return ""
-        return f'({variable} {self.databaseInfo["label"]["machine"]}' + \
-               "{" + f'{self.databaseInfo["properties"]["name"]}:"{self.name}"' + "})"
+        return f'({variable} {self.databaseInfoMachine["label"]["machine"]}' + \
+               "{" + f'{self.databaseInfoMachine["properties"]["name"]}:"{self.name}"' + "})"
 
     def cypher_machine_all(self, variable="machine"):
         """
@@ -133,19 +135,19 @@ class Machine:
         :param variable:
         :return:
         """
-        query = f'({variable} {self.databaseInfo["label"]["machine"]}'
+        query = f'({variable} {self.databaseInfoMachine["label"]["machine"]}'
         if self.name or self.manufacturer or self.locasion is not None:
             query += "{"
             if self.name is not None:
-                query += f'{self.databaseInfo["properties"]["name"]}:"{self.name}",'
+                query += f'{self.databaseInfoMachine["properties"]["name"]}:"{self.name}",'
             if self.manufacturer is not None:
-                query += f'{self.databaseInfo["properties"]["manufacturer"]}:"{self.manufacturer}",'
+                query += f'{self.databaseInfoMachine["properties"]["manufacturer"]}:"{self.manufacturer}",'
             if self.locasion is not None:
-                query += f'{self.databaseInfo["properties"]["locasion"]}:"{self.locasion}",'
+                query += f'{self.databaseInfoMachine["properties"]["locasion"]}:"{self.locasion}",'
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_machine_type_name(self, variable="machine_type"):
+    def cypher_machineType_name(self, variable="machine_type"):
         """
         create a cyhper query with the type of the machinetype
         return "" if there are no type
@@ -154,24 +156,24 @@ class Machine:
         """
         if self.machine_type is None:
             return ""
-        return f'({variable} {self.databaseInfo["label"]["type"]}' + \
-               "{" + f'{self.databaseInfo["properties"]["type"]}:"{self.machine_type}"' + "})"
+        return f'({variable} {self.databaseInfoMachine["label"]["type"]}' + \
+               "{" + f'{self.databaseInfoMachine["properties"]["type"]}:"{self.machine_type}"' + "})"
 
-    def cypher_machine_type_all(self, variable="machine_type"):
+    def cypher_machineType_all(self, variable="machine_type"):
         """
         create a cypher query with all property of the machinetype
         there are no needed property, if there are no type it get a cypher query for all machinetype
         :param variable:
         :return:
         """
-        query = f'({variable} {self.databaseInfo["label"]["type"]}'
+        query = f'({variable} {self.databaseInfoMachine["label"]["type"]}'
         if self.machine_type is not None:
-            query += "{" + f'{self.databaseInfo["properties"]["type"]}:"{self.machine_type}"' + "}"
+            query += "{" + f'{self.databaseInfoMachine["properties"]["type"]}:"{self.machine_type}"' + "}"
         query += ")"
 
         return query
 
-    def cypher_machine_create_node(self, variable="machine"):
+    def cypher_machine_createNode(self, variable="machine"):
         """
         Create a cypher query the Merge a given machine by name
         and update the properties if given
@@ -183,12 +185,12 @@ class Machine:
             return ""
         query = f'MERGE {self.cypher_machine_name(variable)}'
         if self.manufacturer is not None:
-            query += f'\nSET {variable}.{self.databaseInfo["properties"]["manufacturer"]} = "{self.manufacturer}"'
+            query += f'\nSET {variable}.{self.databaseInfoMachine["properties"]["manufacturer"]} = "{self.manufacturer}"'
         if self.locasion is not None:
-            query += f'\nSET {variable}.{self.databaseInfo["properties"]["locasion"]} = "{self.locasion}"'
+            query += f'\nSET {variable}.{self.databaseInfoMachine["properties"]["locasion"]} = "{self.locasion}"'
         return query
 
-    def cypher_machine_type_create_node(self, variable="machine_type"):
+    def cypher_machineType_createNode(self, variable="machine_type"):
         """
        Create a cypher query the Merge a given machinetype by type
        :param variable:

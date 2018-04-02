@@ -74,7 +74,8 @@ class Issue:
                  date_problem_found=None, date_problem_solved=None,
                  date_part_ordered=None, date_part_received=None,
                  databaseInfo=None):
-        self.databaseInfo = databaseInfo
+        self.databaseInfoIssue = databaseInfo['issue']
+        #self.databaseInfoEdges = databaseInfo['edges']
 
         self._set_problem(problem)
         self._set_solution(solution)
@@ -454,7 +455,7 @@ class Issue:
                f"time_to_fix: {self.time_to_fix} \n\ttime_to_turn_on: {self.time_to_turn_on} \n\t"
 
     def cypher_issue_all(self, variable="issue"):
-        query = f'({variable} {self.databaseInfo["label"]["issue"]}'
+        query = f'({variable} {self.databaseInfoIssue["label"]["issue"]}'
         if self.problem or self.solution or self.cause or self.effects or self.part_in_process or self.necessary_part \
                 or self.machine_down or self.date_machine_up or self.date_machine_down \
                 or self.date_workorder_start or self.date_workorder_completion \
@@ -462,41 +463,41 @@ class Issue:
                 or self.date_part_ordered or self.date_part_received is not None:
             query += "{"
             if self.problem is not None:
-                query += f'{self.databaseInfo["properties"]["description_problem"]}:"{self.problem}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_problem"]}:"{self.problem}",'
             if self.solution is not None:
-                query += f'{self.databaseInfo["properties"]["description_solution"]}:"{self.solution}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_solution"]}:"{self.solution}",'
             if self.cause is not None:
-                query += f'{self.databaseInfo["properties"]["description_cause"]}:"{self.cause}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_cause"]}:"{self.cause}",'
             if self.effects is not None:
-                query += f'{self.databaseInfo["properties"]["description_effect"]}:"{self.effects}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_effect"]}:"{self.effects}",'
             if self.part_in_process is not None:
-                query += f'{self.databaseInfo["properties"]["part_in_process"]}:"{self.part_in_process}",'
+                query += f'{self.databaseInfoIssue["properties"]["part_in_process"]}:"{self.part_in_process}",'
             if self.necessary_part is not None:
-                query += f'{self.databaseInfo["properties"]["necessary_part"]}:"{self.necessary_part}",'
+                query += f'{self.databaseInfoIssue["properties"]["necessary_part"]}:"{self.necessary_part}",'
             if self.machine_down is not None:
-                query += f'{self.databaseInfo["properties"]["machine_down"]}:"{self.machine_down}",'
+                query += f'{self.databaseInfoIssue["properties"]["machine_down"]}:"{self.machine_down}",'
             if self.date_machine_up is not None:
-                query += f'{self.databaseInfo["properties"]["date_machine_up"]}:"{self.date_machine_up}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_machine_up"]}:"{self.date_machine_up}",'
             if self.date_machine_down is not None and self.date_machine_down != "_":
-                query += f'{self.databaseInfo["properties"]["date_machine_down"]}:"{self.date_machine_down }",'
+                query += f'{self.databaseInfoIssue["properties"]["date_machine_down"]}:"{self.date_machine_down }",'
             if self.date_workorder_start is not None:
-                query += f'{self.databaseInfo["properties"]["date_workorder_start"]}:"{self.date_workorder_start}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_workorder_start"]}:"{self.date_workorder_start}",'
             if self.date_workorder_completion is not None:
-                query += f'{self.databaseInfo["properties"]["date_workorder_completion"]}:"{self.date_workorder_completion}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_workorder_completion"]}:"{self.date_workorder_completion}",'
             if self.date_maintenance_technician_arrives is not None:
-                query += f'{self.databaseInfo["properties"]["date_maintenance_technician_arrive"]}:"{self.date_maintenance_technician_arrives}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_maintenance_technician_arrive"]}:"{self.date_maintenance_technician_arrives}",'
             if self.date_problem_found is not None:
-                query += f'{self.databaseInfo["properties"]["date_problem_found"]}:"{self.date_problem_found}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_problem_found"]}:"{self.date_problem_found}",'
             if self.date_problem_solved is not None:
-                query += f'{self.databaseInfo["properties"]["date_problem_solve"]}:"{self.date_problem_solved}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_problem_solve"]}:"{self.date_problem_solved}",'
             if self.date_part_ordered is not None:
-                query += f'{self.databaseInfo["properties"]["date_part_ordered"]}:"{self.date_part_ordered}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_part_ordered"]}:"{self.date_part_ordered}",'
             if self.date_part_received is not None:
-                query += f'{self.databaseInfo["properties"]["date_part_received"]}:"{self.date_part_received}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_part_received"]}:"{self.date_part_received}",'
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_issue_create_node(self, variable="issue"):
+    def cypher_issue_createNode(self, variable="issue"):
         # if self.problem and self.solution is None:
         #     return ""
         query = f'CREATE {self.cypher_issue_all(variable)}'

@@ -1,7 +1,3 @@
-from DatabaseStorage.Program.Database.Database_Properties import NodeMachine
-from DatabaseStorage.Program.Database.Database_Properties import NodeIssue
-from DatabaseStorage.Program.Database.Database_Properties import LabelEdges
-
 
 class Machine:
     """
@@ -27,20 +23,15 @@ class Machine:
             toCypherType    --  Used to represent the cypher query of the node MACHINE_TYPE
     """
 
-    def __init__(self, name=None, manufacturer=None, locasion=None, machine_type=None):
-        self.label_machine = NodeMachine.LABEL_MACHINE.value
-        self.label_machine_type = NodeMachine.LABEL_MACHINE_TYPE.value
-        self.property_name = NodeMachine.PROPERTY_NAME.value
-        self.property_manufacturer = NodeMachine.PROPERTY_MANUFACTURER.value
-        self.property_locasion = NodeMachine.PROPERTY_LOCASION.value
-        self.property_type = NodeMachine.PROPERTY_TYPE.value
-        self.label_link_machine = LabelEdges.LABEL_COVERED.value
-        self.label_link_type = LabelEdges.LABEL_ISA.value
+    def __init__(self, name=None, manufacturer=None, locasion=None, machine_type=None, databaseInfo=None):
+        self.databaseInfoMachine = databaseInfo['machine']
+        #self.databaseInfoEdges = databaseInfo['edges']
 
         self._set_name(name)
         self._set_manufacturer(manufacturer)
         self._set_locasion(locasion)
         self._set_machine_type(machine_type)
+
 
     def _get_name(self):
         """
@@ -126,92 +117,128 @@ class Machine:
                f"Type: {self.machine_type}"
 
     def cypher_machine_name(self, variable="machine"):
+        """
+        create a cypher query with the name of the machine
+        is there is no name it return nothing
+        :param variable:
+        :return:
+        """
         if self.name is None:
             return ""
-        return f'({variable} {self.label_machine}' + \
-               "{" + f'{self.property_name}:"{self.name}"' + "})"
+        return f'({variable} {self.databaseInfoMachine["label"]["machine"]}' + \
+               "{" + f'{self.databaseInfoMachine["properties"]["name"]}:"{self.name}"' + "})"
 
     def cypher_machine_all(self, variable="machine"):
-        query = f'({variable} {self.label_machine}'
+        """
+        create a cypher query with all property of the machine
+        there are no needed property, if there are no name it get a cypher query for all machine
+        :param variable:
+        :return:
+        """
+        query = f'({variable} {self.databaseInfoMachine["label"]["machine"]}'
         if self.name or self.manufacturer or self.locasion is not None:
             query += "{"
             if self.name is not None:
-                query += f'{self.property_name}:"{self.name}",'
+                query += f'{self.databaseInfoMachine["properties"]["name"]}:"{self.name}",'
             if self.manufacturer is not None:
-                query += f'{self.property_manufacturer}:"{self.manufacturer}",'
+                query += f'{self.databaseInfoMachine["properties"]["manufacturer"]}:"{self.manufacturer}",'
             if self.locasion is not None:
-                query += f'{self.property_locasion}:"{self.locasion}",'
+                query += f'{self.databaseInfoMachine["properties"]["locasion"]}:"{self.locasion}",'
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_machine_type_name(self, variable="machine_type"):
+    def cypher_machineType_name(self, variable="machine_type"):
+        """
+        create a cyhper query with the type of the machinetype
+        return "" if there are no type
+        :param variable:
+        :return:
+        """
         if self.machine_type is None:
             return ""
-        return f'({variable} {self.label_machine_type}' + \
-               "{" + f'{self.property_type}:"{self.machine_type}"' + "})"
+        return f'({variable} {self.databaseInfoMachine["label"]["type"]}' + \
+               "{" + f'{self.databaseInfoMachine["properties"]["type"]}:"{self.machine_type}"' + "})"
 
-    def cypher_machine_type_all(self, variable="machine_type"):
-        query = f'({variable} {self.label_machine_type}'
+    def cypher_machineType_all(self, variable="machine_type"):
+        """
+        create a cypher query with all property of the machinetype
+        there are no needed property, if there are no type it get a cypher query for all machinetype
+        :param variable:
+        :return:
+        """
+        query = f'({variable} {self.databaseInfoMachine["label"]["type"]}'
         if self.machine_type is not None:
-            query += "{" + f'{self.property_type}:"{self.machine_type}"' + "}"
+            query += "{" + f'{self.databaseInfoMachine["properties"]["type"]}:"{self.machine_type}"' + "}"
         query += ")"
 
         return query
 
-    def cypher_machine_create_node(self, variable="machine"):
+    def cypher_machine_createNode(self, variable="machine"):
+        """
+        Create a cypher query the Merge a given machine by name
+        and update the properties if given
+        :param variable:
+        :return:
+        """
+
         if self.name is None:
             return ""
         query = f'MERGE {self.cypher_machine_name(variable)}'
         if self.manufacturer is not None:
-            query += f'\nSET {variable}.{self.property_manufacturer} = "{self.manufacturer}"'
+            query += f'\nSET {variable}.{self.databaseInfoMachine["properties"]["manufacturer"]} = "{self.manufacturer}"'
         if self.locasion is not None:
-            query += f'\nSET {variable}.{self.property_locasion} = "{self.locasion}"'
+            query += f'\nSET {variable}.{self.databaseInfoMachine["properties"]["locasion"]} = "{self.locasion}"'
         return query
 
-    def cypher_machine_type_create_node(self, variable="machine_type"):
+    def cypher_machineType_createNode(self, variable="machine_type"):
+        """
+       Create a cypher query the Merge a given machinetype by type
+       :param variable:
+       :return:
+       """
         if self.name is None:
             return ""
         query = f'MERGE {self.cypher_machine_name(variable)}'
         return query
 
-    def cypher_kpi(self, variable="machine", variable_type="machine_type"):
-
-        match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-[{self.label_link_machine}]->({variable} {self.label_machine})'
-        if self.machine_type is not None:
-            match += f'-[{self.label_link_type}]->({variable_type} {self.label_machine_type})'
-        where, res = self.cypher_where_properties(variable=variable, variable_type=variable_type)
-
-        return match, " OR ".join(where), res
-
-    def cypher_where_properties(self, variable="tag", variable_type="machine_type"):
-        where = []
-        res = []
-        if self.name is not None:
-            for n in self.name:
-                if n == "_":
-                    res.append(f'{variable}.{self.property_name}')
-                else:
-                    where.append(f'{variable}.{self.property_name} = "{n}"')
-
-        if self.manufacturer is not None:
-            for m in self.manufacturer:
-                if m == "_":
-                    where.append(f'{variable}.{self.property_manufacturer} = "{m}"')
-                else:
-                    res.append(f'{variable}.{self.property_manufacturer}')
-
-        if self.locasion is not None:
-            for l in self.locasion:
-                if l == "_":
-                    res.append(f'{variable}.{self.property_locasion}')
-                else:
-                    where.append(f'{variable}.{self.property_locasion} = "{l}"')
-
-        if self.machine_type is not None:
-            for m in self.machine_type:
-                if m == "_":
-                    res.append(f'{variable_type}.{self.property_type}')
-                else:
-                    where.append(f'{variable_type}.{self.property_type} = "{m}"')
-
-        return where, res
+    # def cypher_kpi(self, variable="machine", variable_type="machine_type"):
+    #
+    #     match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-[{self.label_link_machine}]->({variable} {self.label_machine})'
+    #     if self.machine_type is not None:
+    #         match += f'-[{self.label_link_type}]->({variable_type} {self.label_machine_type})'
+    #     where, res = self.cypher_where_properties(variable=variable, variable_type=variable_type)
+    #
+    #     return match, " OR ".join(where), res
+    #
+    # def cypher_where_properties(self, variable="tag", variable_type="machine_type"):
+    #     where = []
+    #     res = []
+    #     if self.name is not None:
+    #         for n in self.name:
+    #             if n == "_":
+    #                 res.append(f'{variable}.{self.property_name}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_name} = "{n}"')
+    #
+    #     if self.manufacturer is not None:
+    #         for m in self.manufacturer:
+    #             if m == "_":
+    #                 where.append(f'{variable}.{self.property_manufacturer} = "{m}"')
+    #             else:
+    #                 res.append(f'{variable}.{self.property_manufacturer}')
+    #
+    #     if self.locasion is not None:
+    #         for l in self.locasion:
+    #             if l == "_":
+    #                 res.append(f'{variable}.{self.property_locasion}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_locasion} = "{l}"')
+    #
+    #     if self.machine_type is not None:
+    #         for m in self.machine_type:
+    #             if m == "_":
+    #                 res.append(f'{variable_type}.{self.property_type}')
+    #             else:
+    #                 where.append(f'{variable_type}.{self.property_type} = "{m}"')
+    #
+    #     return where, res

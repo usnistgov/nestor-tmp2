@@ -1,0 +1,50 @@
+issue:
+  description_problem: Issue_description
+  description_solution: Issue_resolution
+  description_cause: Issue_cause
+  description_effect: Issue_effect
+  machine_down: Issue_down
+  necessary_part: Issue_partneed
+  part_in_process: Issue_partprocess
+
+  date_machine_down: Md
+  date_workorder_start : Wd
+  date_maintenance_technician_arrive: Td
+  date_solution_found: Sd
+  date_part_ordered: Pd
+  date_part_received: Pu
+  date_solution_solve: Su
+  date_machine_up: Mu
+  date_workorder_completion : Wu
+
+technician:
+  name: Technician_name
+  skills: Technician_skill
+  crafts: Technician_craft
+
+operator:
+  name: Operator_name
+
+machine:
+  name: Machine_name
+  manufacturer: Machine_manufacture
+  locasion: Machine_locasion
+  type: Machine_type
+
+item:
+  keyword: Tag_item
+
+problem:
+  keyword: Tag_problem
+
+solution:
+  keyword: Tag_solution
+
+unknown:
+  keyword: Tag_unknown
+
+problemitem:
+  keyword: Tag_pi
+
+solutionitem:
+  keyword: Tag_si

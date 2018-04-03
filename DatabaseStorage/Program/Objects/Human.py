@@ -1,9 +1,5 @@
 import collections
 
-from DatabaseStorage.Program.Database.Database_Properties import NodeHuman
-from DatabaseStorage.Program.Database.Database_Properties import NodeIssue
-from DatabaseStorage.Program.Database.Database_Properties import LabelEdges
-
 
 class Human:
     """
@@ -32,9 +28,9 @@ class Human:
                             If in the database a HUMAN already have my name, It updated it and add skills and crafts
     """
 
-    def __init__(self, name=None):
-        self.label_human = NodeHuman.LABEL_HUMAN.value
-        self.property_name = NodeHuman.PROPERTY_NAME.value
+    def __init__(self, name=None,  databaseInfo=None):
+        self.databaseInfoHuman = databaseInfo['human']
+        #self.databaseInfoEdges = databaseInfo['edges']
 
         self._set_name(name)
 
@@ -66,40 +62,40 @@ class Human:
     def cypher_human_name(self, variable="human"):
         if self.name is None:
             return ""
-        return f'({variable} {self.label_human}' + \
-               "{" + f'{self.property_name}:"{self.name}"' + "})"
+        return f'({variable} {self.databaseInfoHuman["label"]["human"]}' + \
+               "{" + f'{self.databaseInfoHuman["properties"]["name"]}:"{self.name}"' + "})"
 
     def cypher_human_all(self, variable="human"):
-        query = f'({variable} {self.label_human}'
+        query = f'({variable} {self.databaseInfoHuman["label"]["human"]}'
         if self.name is not None:
-            query += "{" + f'{self.property_name}:"{self.name}"' + "}"
+            query += "{" + f'{self.databaseInfoHuman["properties"]["name"]}:"{self.name}"' + "}"
         query += ")"
 
         return query
 
-    def cypher_human_create_node(self, variable="human"):
+    def cypher_human_createNode(self, variable="human"):
         if self.name is None:
             return ""
         query = f'MERGE {self.cypher_human_name(variable)}'
         return query
 
-    def cypher_kpi(self, variable="human"):
-        match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-->({variable} {self.label_human})'
-        where, res = self.cypher_where_properties(variable=variable)
-
-        return match, " OR ".join(where), res
-
-    def cypher_where_properties(self, variable="human"):
-        where = []
-        res = []
-        if self.name is not None:
-            for n in self.name:
-                if n == "_":
-                    res.append(f'{variable}.{self.property_name}')
-                else:
-                    where.append(f'{variable}.{self.property_name} = "{n}"')
-
-        return where, res
+    # def cypher_kpi(self, variable="human"):
+    #     match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-->({variable} {self.label_human})'
+    #     where, res = self.cypher_where_properties(variable=variable)
+    #
+    #     return match, " OR ".join(where), res
+    #
+    # def cypher_where_properties(self, variable="human"):
+    #     where = []
+    #     res = []
+    #     if self.name is not None:
+    #         for n in self.name:
+    #             if n == "_":
+    #                 res.append(f'{variable}.{self.property_name}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_name} = "{n}"')
+    #
+    #     return where, res
 
 
 class Operator(Human):
@@ -129,11 +125,8 @@ class Operator(Human):
                             If in the database a HUMAN already have my name, It updated it and add skills and crafts
     """
 
-    def __init__(self, name=None):
-        self.label_operator = NodeHuman.LABEL_OPERATOR.value
-        self.label_link = LabelEdges.LABEL_REQUESTED.value
-
-        super().__init__(name)
+    def __init__(self, name=None, databaseInfo=None):
+        super().__init__(name, databaseInfo=databaseInfo)
 
     def __str__(self):
         return f"{type(self)}\n\t" \
@@ -142,33 +135,31 @@ class Operator(Human):
     def cypher_operator_name(self, variable="operator"):
         if self.name is None:
             return ""
-        return f'({variable} {self.label_human}{self.label_operator}' + \
-               "{" + f'{self.property_name}:"{self.name}"' + "})"
+        return f'({variable} {self.databaseInfoHuman["label"]["human"]}{self.databaseInfoHuman["label"]["operator"]}' + \
+               "{" + f'{self.databaseInfoHuman["properties"]["name"]}:"{self.name}"' + "})"
 
     def cypher_operator_all(self, variable="operator"):
-        query = f'({variable} {self.label_human}{self.label_operator}'
+        query = f'({variable} {self.databaseInfoHuman["label"]["human"]}{self.databaseInfoHuman["label"]["operator"]}'
         if self.name is not None:
-            query += "{" + f'{self.property_name}:"{self.name}"' + "}"
+            query += "{" + f'{self.databaseInfoHuman["properties"]["name"]}:"{self.name}"' + "}"
         query += ")"
 
         return query
 
-    def cypher_operator_create_node(self, variable="operator"):
-        if self.name is None:
-            return ""
-        query = f"MERGE {self.cypher_human_name(variable)}"
-        query += f'\nSET {variable} {self.label_operator}'
+    def cypher_operator_createNode(self, variable="operator"):
+        query = self.cypher_human_createNode(variable)
+        query += f'\nSET {variable} {self.databaseInfoHuman["label"]["operator"]}'
 
         return query
 
-    def cypher_kpi(self, variable="operator"):
-        match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-[{self.label_link}]->({variable} {self.label_human}{self.label_operator})'
-        where, res = self.cypher_where_properties(variable=variable)
-
-        return match, " OR ".join(where), res
-
-    def cypher_where_properties(self, variable="operator"):
-        return super().cypher_where_properties(variable)
+    # def cypher_kpi(self, variable="operator"):
+    #     match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-[{self.label_link}]->({variable} {self.label_human}{self.label_operator})'
+    #     where, res = self.cypher_where_properties(variable=variable)
+    #
+    #     return match, " OR ".join(where), res
+    #
+    # def cypher_where_properties(self, variable="operator"):
+    #     return super().cypher_where_properties(variable)
 
 
 class Technician(Human):
@@ -198,13 +189,9 @@ class Technician(Human):
                             If in the database a HUMAN already have my name, It updated it and add skills and crafts
     """
 
-    def __init__(self, name=None, skills=None, crafts=None):
-        self.label_technician = NodeHuman.LABEL_TECHNICIAN.value
-        self.property_skills = NodeHuman.PROPERTY_SKILLS.value
-        self.property_crafts = NodeHuman.PROPERTY_CRAFTS.value
-        self.label_link = LabelEdges.LABEL_SOLVE.value
+    def __init__(self, name=None, skills=None, crafts=None, databaseInfo=None):
 
-        super().__init__(name)
+        super().__init__(name, databaseInfo=databaseInfo)
         self._set_skills(skills)
         self._set_crafts(crafts)
 
@@ -257,60 +244,56 @@ class Technician(Human):
     def cypher_technician_name(self, variable="technician"):
         if self.name is None:
             return ""
-        return f'({variable} {self.label_human}{self.label_technician}' + \
-               "{" + f'{self.property_name}:"{self.name}"' + "})"
+        return f'({variable} {self.databaseInfoHuman["label"]["human"]}{self.databaseInfoHuman["label"]["technician"]}' + \
+               "{" + f'{self.databaseInfoHuman["properties"]["name"]}:"{self.name}"' + "})"
 
     def cypher_technician_all(self, variable="technician"):
-        query = f'({variable} {self.label_human}{self.label_technician}'
+        query = f'({variable} {self.databaseInfoHuman["label"]["human"]}{self.databaseInfoHuman["label"]["technician"]}'
         if self.name or self.skills or self.crafts is not None:
             query += "{"
             if self.name is not None:
-                query += f'{self.property_name}:"{self.name}",'
+                query += f'{self.databaseInfoHuman["properties"]["name"]}:"{self.name}",'
             if self.skills is not None:
-                query += f'{self.property_skills}:' + '["' + '","'.join(self.skills) + '"],'
+                query += f'{self.databaseInfoHuman["properties"]["skills"]}:' + '["' + '","'.join(self.skills) + '"],'
             if self.crafts is not None:
-                query += f'{self.property_crafts}:' + '["' + '","'.join(self.crafts) + '"],'
+                query += f'{self.databaseInfoHuman["properties"]["crafts"]}:' + '["' + '","'.join(self.crafts) + '"],'
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_technician_create_node(self, variable="technician"):
-        if self.name is None:
-            return ""
-
-        query = f"MERGE {self.cypher_human_name(variable)}"
-        query += f'\nSET {variable} {self.label_technician}'
+    def cypher_technician_createNode(self, variable="technician"):
+        query = self.cypher_human_createNode(variable)
         if self.skills is not None:
             for skill in self.skills:
-                query += f'\nFOREACH(x in CASE WHEN "{skill}" in {variable}.{self.property_skills} THEN [] ELSE [1] END |' \
-                         f'  SET {variable}.{self.property_skills} = coalesce({variable}.{self.property_skills},[]) + "{skill}" )'
+                query += f'\nFOREACH(x in CASE WHEN "{skill}" in {variable}.{self.databaseInfoHuman["properties"]["skills"]} THEN [] ELSE [1] END |' \
+                         f'  SET {variable}.{self.databaseInfoHuman["properties"]["skills"]} = coalesce({variable}.{self.databaseInfoHuman["properties"]["skills"]},[]) + "{skill}" )'
         if self.crafts is not None:
             for craft in self.crafts:
-                query += f'\nFOREACH(x in CASE WHEN "{craft}" in {variable}.{self.property_crafts} THEN [] ELSE [1] END |' \
-                         f'  SET {variable}.{self.property_crafts} = coalesce({variable}.{self.property_crafts},[]) + "{craft}" )'
-
+                query += f'\nFOREACH(x in CASE WHEN "{craft}" in {variable}.{self.databaseInfoHuman["properties"]["crafts"]} THEN [] ELSE [1] END |' \
+                         f'  SET {variable}.{self.databaseInfoHuman["properties"]["crafts"]} = coalesce({variable}.{self.databaseInfoHuman["properties"]["crafts"]},[]) + "{craft}" )'
+        query += f'\nSET {variable} {self.databaseInfoHuman["label"]["technician"]}'
         return query
 
-    def cypher_kpi(self, variable="technician"):
-        match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-[{self.label_link}]->({variable} {self.label_human}{self.label_technician})'
-        where, res = self.cypher_where_properties(variable=variable)
-
-        return match, " OR ".join(where), res
-
-    def cypher_where_properties(self, variable="technician"):
-        where, res = super().cypher_where_properties(variable)
-
-        if self.skills is not None:
-            for s in self.skills:
-                if s == "_":
-                    res.append(f'{variable}.{self.property_skills}')
-                else:
-                    where.append(f'"{s}" IN {variable}.{self.property_skills}')
-
-        if self.crafts is not None:
-            for c in self.crafts:
-                if c == "_":
-                    res.append(f'{variable}.{self.property_crafts}')
-                else:
-                    where.append(f'"{c}" IN {variable}.{self.property_crafts}')
-
-        return where, res
+    # def cypher_kpi(self, variable="technician"):
+    #     match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})-[{self.label_link}]->({variable} {self.label_human}{self.label_technician})'
+    #     where, res = self.cypher_where_properties(variable=variable)
+    #
+    #     return match, " OR ".join(where), res
+    #
+    # def cypher_where_properties(self, variable="technician"):
+    #     where, res = super().cypher_where_properties(variable)
+    #
+    #     if self.skills is not None:
+    #         for s in self.skills:
+    #             if s == "_":
+    #                 res.append(f'{variable}.{self.property_skills}')
+    #             else:
+    #                 where.append(f'"{s}" IN {variable}.{self.property_skills}')
+    #
+    #     if self.crafts is not None:
+    #         for c in self.crafts:
+    #             if c == "_":
+    #                 res.append(f'{variable}.{self.property_crafts}')
+    #             else:
+    #                 where.append(f'"{c}" IN {variable}.{self.property_crafts}')
+    #
+    #     return where, res

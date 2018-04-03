@@ -1,7 +1,6 @@
 from datetime import datetime
 
-from DatabaseStorage.Program.Database.Database_Properties import NodeIssue
-from DatabaseStorage.Program.Others.MyDate import isoStringToDate
+from DatabaseStorage.Program.helper import isoStringToDate
 import collections
 
 """
@@ -70,30 +69,13 @@ class Issue:
                  part_in_process=None, necessary_part=None, machine_down=None,
 
                  date_machine_up=None, date_machine_down=None,
-                 date_maintenance_work_order_issue=None, date_maintenance_work_order_close=None,
+                 date_workorder_start=None, date_workorder_completion=None,
                  date_maintenance_technician_arrives=None,
                  date_problem_found=None, date_problem_solved=None,
-                 date_part_ordered=None, date_maintenance_technician_begin_repair_problem=None,
-                 ):
-        self.label_issue = NodeIssue.LABEL_ISSUE.value
-        self.property_problem = NodeIssue.PROPERTY_DESCRIPTION_PROBLEM.value
-        self.property_solution = NodeIssue.PROPERTY_DESCRIPTION_SOLUTION.value
-        self.property_cause = NodeIssue.PROPERTY_DESCRIPTION_CAUSE.value
-        self.property_effects = NodeIssue.PROPERTY_DESCRIPTION_EFFECT.value
-        self.property_machine_down = NodeIssue.PROPERTY_MACHINE_DOWN.value
-
-        self.property_part_in_process = NodeIssue.PROPERTY_PART_PROCESS.value
-        self.property_necessary_part = NodeIssue.PROPERTY_NECESSARY_PART.value
-
-        self.property_date_machine_down = NodeIssue.PROPERTY_DATE_MACHINE_DOWN.value
-        self.property_date_machine_up = NodeIssue.PROPERTY_DATE_MACHINE_UP.value
-        self.property_date_mwo_issue = NodeIssue.PROPERTY_DATE_MAINTENANCE_WORK_ORDER_ISSUE.value
-        self.property_date_mwo_close = NodeIssue.PROPERTY_DATE_MAINTENANCE_WORK_ORDER_CLOSE.value
-        self.property_date_mt_arrives = NodeIssue.PROPERTY_DATE_TECHNICIAN_ARRIVE.value
-        self.property_date_problem_found = NodeIssue.PROPERTY_DATE_PROBLEM_FOUND.value
-        self.property_date_problem_solved = NodeIssue.PROPERTY_DATE_PROBLEM_SOLVE.value
-        self.property_date_part_ordered = NodeIssue.PROPERTY_DATE_PART_ORDER.value
-        self.property_date_mt_begin_repaire_problem = NodeIssue.PROPERTY_DATE_MAINTENANCE_TECHNICIAN_REPAIR_PROBLEM.value
+                 date_part_ordered=None, date_part_received=None,
+                 databaseInfo=None):
+        self.databaseInfoIssue = databaseInfo['issue']
+        #self.databaseInfoEdges = databaseInfo['edges']
 
         self._set_problem(problem)
         self._set_solution(solution)
@@ -107,8 +89,8 @@ class Issue:
         self._set_date_machine_down(date_machine_down)
         self._set_date_machine_up(date_machine_up)
 
-        self._set_date_maintenance_work_order_close(date_maintenance_work_order_close)
-        self._set_date_maintenance_work_order_issue(date_maintenance_work_order_issue)
+        self._set_date_workorder_completion(date_workorder_completion)
+        self._set_date_workorder_start(date_workorder_start)
 
         self._set_date_maintenance_technician_arrives(date_maintenance_technician_arrives)
 
@@ -116,9 +98,7 @@ class Issue:
         self._set_date_problem_found(date_problem_found)
 
         self._set_date_part_ordered(date_part_ordered)
-        self._set_date_maintenance_technician_begin_repair_problem(date_maintenance_technician_begin_repair_problem)
-
-        self.create_all_time()
+        self._set_date_part_received(date_part_received)
 
     def _get_problem(self):
         return self.problem
@@ -227,33 +207,33 @@ class Issue:
         else:
             self.date_machine_up = None
 
-    def _get_date_maintenance_work_order_close(self):
-        return self.date_maintenance_work_order_close
+    def _get_date_workorder_completion(self):
+        return self.date_workorder_completion
 
-    def _set_date_maintenance_work_order_close(self, date_maintenance_work_order_close):
-        if date_maintenance_work_order_close is not None:
-            if isinstance(date_maintenance_work_order_close, datetime):
-                self.date_maintenance_work_order_close = date_maintenance_work_order_close
-            elif isinstance(date_maintenance_work_order_close, str):
-                self.date_maintenance_work_order_close = isoStringToDate(date_maintenance_work_order_close)
-            elif isinstance(date_maintenance_work_order_close, collections.Iterable):
-                self.date_maintenance_work_order_close = date_maintenance_work_order_close
+    def _set_date_workorder_completion(self, date_workorder_completion):
+        if date_workorder_completion is not None:
+            if isinstance(date_workorder_completion, datetime):
+                self.date_workorder_completion = date_workorder_completion
+            elif isinstance(date_workorder_completion, str):
+                self.date_workorder_completion = isoStringToDate(date_workorder_completion)
+            elif isinstance(date_workorder_completion, collections.Iterable):
+                self.date_workorder_completion = date_workorder_completion
         else:
-            self.date_maintenance_work_order_close = None
+            self.date_workorder_completion = None
 
-    def _get_date_maintenance_work_order_issue(self):
-        return self.date_maintenance_work_order_issue
+    def _get_date_workorder_start(self):
+        return self.date_workorder_start
 
-    def _set_date_maintenance_work_order_issue(self, date_maintenance_work_order_issue):
-        if date_maintenance_work_order_issue is not None:
-            if isinstance(date_maintenance_work_order_issue, datetime):
-                self.date_maintenance_work_order_issue = date_maintenance_work_order_issue
-            elif isinstance(date_maintenance_work_order_issue, str):
-                self.date_maintenance_work_order_issue = isoStringToDate(date_maintenance_work_order_issue)
-            elif isinstance(date_maintenance_work_order_issue, collections.Iterable):
-                self.date_maintenance_work_order_issue = date_maintenance_work_order_issue
+    def _set_date_workorder_start(self, date_workorder_start):
+        if date_workorder_start is not None:
+            if isinstance(date_workorder_start, datetime):
+                self.date_workorder_start = date_workorder_start
+            elif isinstance(date_workorder_start, str):
+                self.date_workorder_start = isoStringToDate(date_workorder_start)
+            elif isinstance(date_workorder_start, collections.Iterable):
+                self.date_workorder_start = date_workorder_start
         else:
-            self.date_maintenance_work_order_issue = None
+            self.date_workorder_start = None
 
     def _get_date_maintenance_technician_arrives(self, ):
         return self.date_maintenance_technician_arrives
@@ -311,19 +291,19 @@ class Issue:
         else:
             self.date_part_ordered = None
 
-    def _get_date_maintenance_technician_begin_repair_problem(self):
-        return self.date_maintenance_technician_begin_repair_problem
+    def _get_date_part_received(self):
+        return self.date_part_received
 
-    def _set_date_maintenance_technician_begin_repair_problem(self, date_maintenance_technician_begin_repair_problem):
-        if date_maintenance_technician_begin_repair_problem is not None:
-            if isinstance(date_maintenance_technician_begin_repair_problem, datetime):
-                self.date_maintenance_technician_begin_repair_problem = date_maintenance_technician_begin_repair_problem
-            elif isinstance(date_maintenance_technician_begin_repair_problem, str):
-                self.date_maintenance_technician_begin_repair_problem = isoStringToDate(date_maintenance_technician_begin_repair_problem)
-            elif isinstance(date_maintenance_technician_begin_repair_problem, collections.Iterable):
-                self.date_maintenance_technician_begin_repair_problem = date_maintenance_technician_begin_repair_problem
+    def _set_date_part_received(self, date_part_received):
+        if date_part_received is not None:
+            if isinstance(date_part_received, datetime):
+                self.date_part_received = date_part_received
+            elif isinstance(date_part_received, str):
+                self.date_part_received = isoStringToDate(date_part_received)
+            elif isinstance(date_part_received, collections.Iterable):
+                self.date_part_received = date_part_received
         else:
-            self.date_maintenance_technician_begin_repair_problem = None
+            self.date_part_received = None
 
         ############################  TIME ############################
 
@@ -341,7 +321,7 @@ class Issue:
 
     def _set_time_work_order_completion(self):
         try:
-            self.time_work_order_completion = self.date_maintenance_work_order_close - self.date_maintenance_work_order_issue
+            self.time_work_order_completion = self.date_workorder_completion - self.date_workorder_start
         except TypeError:
             self.time_work_order_completion = None
 
@@ -368,7 +348,7 @@ class Issue:
 
     def _set_time_to_issue_work_order(self):
         try:
-            self.time_to_issue_work_order = self.date_maintenance_work_order_issue - self.date_machine_down
+            self.time_to_issue_work_order = self.date_workorder_start - self.date_machine_down
         except TypeError:
             self.time_to_issue_work_order = None
 
@@ -377,7 +357,7 @@ class Issue:
 
     def _set_time_to_travel(self):
         try:
-            self.time_to_travel = self.date_maintenance_technician_arrives - self.date_maintenance_work_order_issue
+            self.time_to_travel = self.date_maintenance_technician_arrives - self.date_workorder_start
         except TypeError:
             self.time_to_travel = None
 
@@ -413,7 +393,7 @@ class Issue:
 
     def _set_time_lead_for_part(self):
         try:
-            self.time_lead_for_part = self.date_maintenance_technician_begin_repair_problem - self.date_part_ordered
+            self.time_lead_for_part = self.date_part_received - self.date_part_ordered
         except TypeError:
             self.time_lead_for_part = None
 
@@ -422,7 +402,7 @@ class Issue:
 
     def _set_time_to_fix(self):
         try:
-            self.time_to_fix = self.date_problem_solved - self.date_maintenance_technician_begin_repair_problem
+            self.time_to_fix = self.date_problem_solved - self.date_part_received
         except TypeError:
             self.time_to_fix = None
 
@@ -435,7 +415,6 @@ class Issue:
         except TypeError:
             self.time_to_turn_on = None
 
-            #
 
     def create_all_time(self):
         """
@@ -455,18 +434,19 @@ class Issue:
         self._set_time_to_turn_on()
 
     def __str__(self):
+        self.create_all_time()
         return f"OBJECT: {type(self)}\n\t" \
                f"problem: {self.problem} \n\tsolution: {self.solution} \n\t" \
                f"cause: {self.cause} \n\teffects: {self.effects} \n\t" \
                f"part_in_process: {self.part_in_process} \n\t|| necessary_part: {self.necessary_part} \n\t" \
                f"machine_down: {self.machine_down} \n\t" \
                f"date_machine_up: {self.date_machine_up} \n\t|| date_machine_down: {self.date_machine_down} \n\t" \
-               f"date_maintenance_work_order_issue: {self.date_maintenance_work_order_issue} \n\t" \
-               f"date_maintenance_work_order_close: {self.date_maintenance_work_order_close} \n\t" \
+               f"date_workorder_start: {self.date_workorder_start} \n\t" \
+               f"date_workorder_completion: {self.date_workorder_completion} \n\t" \
                f"date_maintenance_technician_arrives: {self.date_maintenance_technician_arrives} \n\t" \
                f"date_problem_found: {self.date_problem_found} \n\tdate_problem_solved: {self.date_problem_solved} \n\t" \
                f"date_part_ordered: {self.date_part_ordered} \n\t" \
-               f"date_maintenance_technician_begin_repair_problem: {self.date_maintenance_technician_begin_repair_problem} \n\t" \
+               f"date_part_received: {self.date_part_received} \n\t" \
                f"time_to_repair: {self.time_to_repair} \n\ttime_work_order_completion: {self.time_work_order_completion} \n\t" \
                f"time_to_dispatch: {self.time_to_dispatch} \n\ttime_to_return_to_operation: {self.time_to_return_to_operation} \n\t" \
                f"time_to_issue_work_order: {self.time_to_issue_work_order} \n\ttime_to_travel: {self.time_to_travel} \n\t" \
@@ -475,159 +455,159 @@ class Issue:
                f"time_to_fix: {self.time_to_fix} \n\ttime_to_turn_on: {self.time_to_turn_on} \n\t"
 
     def cypher_issue_all(self, variable="issue"):
-        query = f'({variable} {self.label_issue}'
+        query = f'({variable} {self.databaseInfoIssue["label"]["issue"]}'
         if self.problem or self.solution or self.cause or self.effects or self.part_in_process or self.necessary_part \
                 or self.machine_down or self.date_machine_up or self.date_machine_down \
-                or self.date_maintenance_work_order_issue or self.date_maintenance_work_order_close \
+                or self.date_workorder_start or self.date_workorder_completion \
                 or self.date_maintenance_technician_arrives or self.date_problem_found or self.date_problem_solved \
-                or self.date_part_ordered or self.date_maintenance_technician_begin_repair_problem is not None:
+                or self.date_part_ordered or self.date_part_received is not None:
             query += "{"
             if self.problem is not None:
-                query += f'{self.property_problem}:"{self.problem}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_problem"]}:"{self.problem}",'
             if self.solution is not None:
-                query += f'{self.property_solution}:"{self.solution}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_solution"]}:"{self.solution}",'
             if self.cause is not None:
-                query += f'{self.property_cause}:"{self.cause}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_cause"]}:"{self.cause}",'
             if self.effects is not None:
-                query += f'{self.property_effects}:"{self.effects}",'
+                query += f'{self.databaseInfoIssue["properties"]["description_effect"]}:"{self.effects}",'
             if self.part_in_process is not None:
-                query += f'{self.property_part_in_process}:"{self.part_in_process}",'
+                query += f'{self.databaseInfoIssue["properties"]["part_in_process"]}:"{self.part_in_process}",'
             if self.necessary_part is not None:
-                query += f'{self.property_necessary_part}:"{self.necessary_part}",'
+                query += f'{self.databaseInfoIssue["properties"]["necessary_part"]}:"{self.necessary_part}",'
             if self.machine_down is not None:
-                query += f'{self.property_machine_down}:"{self.machine_down}",'
+                query += f'{self.databaseInfoIssue["properties"]["machine_down"]}:"{self.machine_down}",'
             if self.date_machine_up is not None:
-                query += f'{self.property_date_machine_up}:"{self.date_machine_up}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_machine_up"]}:"{self.date_machine_up}",'
             if self.date_machine_down is not None and self.date_machine_down != "_":
-                query += f'{self.property_date_machine_down}:"{self.date_machine_down }",'
-            if self.date_maintenance_work_order_issue is not None:
-                query += f'{self.property_date_mwo_issue}:"{self.date_maintenance_work_order_issue}",'
-            if self.date_maintenance_work_order_close is not None:
-                query += f'{self.property_date_mwo_close}:"{self.date_maintenance_work_order_close}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_machine_down"]}:"{self.date_machine_down }",'
+            if self.date_workorder_start is not None:
+                query += f'{self.databaseInfoIssue["properties"]["date_workorder_start"]}:"{self.date_workorder_start}",'
+            if self.date_workorder_completion is not None:
+                query += f'{self.databaseInfoIssue["properties"]["date_workorder_completion"]}:"{self.date_workorder_completion}",'
             if self.date_maintenance_technician_arrives is not None:
-                query += f'{self.property_date_mt_arrives}:"{self.date_maintenance_technician_arrives}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_maintenance_technician_arrive"]}:"{self.date_maintenance_technician_arrives}",'
             if self.date_problem_found is not None:
-                query += f'{self.property_date_problem_found}:"{self.date_problem_found}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_problem_found"]}:"{self.date_problem_found}",'
             if self.date_problem_solved is not None:
-                query += f'{self.property_date_problem_solved}:"{self.date_problem_solved}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_problem_solve"]}:"{self.date_problem_solved}",'
             if self.date_part_ordered is not None:
-                query += f'{self.property_date_part_ordered}:"{self.date_part_ordered}",'
-            if self.date_maintenance_technician_begin_repair_problem is not None:
-                query += f'{self.property_date_mt_begin_repaire_problem}:"{self.date_maintenance_technician_begin_repair_problem}",'
+                query += f'{self.databaseInfoIssue["properties"]["date_part_ordered"]}:"{self.date_part_ordered}",'
+            if self.date_part_received is not None:
+                query += f'{self.databaseInfoIssue["properties"]["date_part_received"]}:"{self.date_part_received}",'
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_issue_create_node(self, variable="issue"):
+    def cypher_issue_createNode(self, variable="issue"):
         # if self.problem and self.solution is None:
         #     return ""
         query = f'CREATE {self.cypher_issue_all(variable)}'
         return query
 
-    def cypher_kpi(self, variable="issue"):
-
-        match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})'
-        where, res = self.cypher_where_properties(variable=variable)
-
-        return match, " OR ".join(where), res
-
-    def cypher_where_properties(self, variable="issue"):
-        where = []
-        res = []
-        if self.problem is not None:
-            for p in self.problem:
-                if p == "_":
-                    res.append(f'{variable}.{self.property_problem}')
-                else:
-                    where.append(f'{variable}.{self.property_problem} = "{p}"')
-        if self.solution is not None:
-            for s in self.solution:
-                if s == "_":
-                    res.append(f'{variable}.{self.property_solution}')
-                else:
-                    where.append(f'{variable}.{self.property_solution} = "{s}"')
-        if self.cause is not None:
-            for c in self.cause:
-                if c == "_":
-                    res.append(f'{variable}.{self.property_cause}')
-                else:
-                    where.append(f'{variable}.{self.property_cause} = "{c}"')
-        if self.effects is not None:
-            for e in self.effects:
-                if e == "_":
-                    res.append(f'{variable}.{self.property_effects}')
-                else:
-                    where.append(f'{variable}.{self.property_effects} = "{e}"')
-        if self.part_in_process is not None:
-            for p in self.part_in_process:
-                if p == "_":
-                    res.append(f'{variable}.{self.property_part_in_process}')
-                else:
-                    where.append(f'{variable}.{self.property_part_in_process} = "{p}"')
-        if self.necessary_part is not None:
-            for n in self.necessary_part:
-                if n == "_":
-                    res.append(f'{variable}.{self.property_necessary_part}')
-                else:
-                    where.append(f'{variable}.{self.property_necessary_part} = "{n}"')
-        if self.machine_down is not None:
-            for d in self.machine_down:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_machine_down}')
-                else:
-                    where.append(f'{variable}.{self.property_machine_down} = {self.machine_down}')
-        if self.date_machine_down is not None:
-            for d in self.date_machine_down:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_machine_down}')
-                else:
-                    where.append(f'{variable}.{self.date_machine_down} = "{d}"')
-        if self.date_machine_up is not None:
-            for d in self.date_machine_up:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_machine_up}')
-                else:
-                    where.append(f'{variable}.{self.date_machine_up} = "{d}"')
-        if self.date_maintenance_work_order_close is not None:
-            for d in self.date_maintenance_work_order_close:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_mwo_close}')
-                else:
-                    where.append(f'{variable}.{self.property_date_mwo_close} = "{d}"')
-        if self.date_maintenance_work_order_issue is not None:
-            for d in self.date_maintenance_work_order_issue:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_mwo_issue}')
-                else:
-                    where.append(f'{variable}.{self.property_date_mwo_issue} = "{d}"')
-        if self.date_maintenance_technician_arrives is not None:
-            for d in self.date_maintenance_technician_arrives:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_mt_arrives}')
-                else:
-                    where.append(f'{variable}.{self.property_date_mt_arrives} = "{d}"')
-        if self.date_problem_solved is not None:
-            for d in self.date_problem_solved:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_problem_solved}')
-                else:
-                    where.append(f'{variable}.{self.date_problem_solved} = "{d}"')
-        if self.date_problem_found is not None:
-            for d in self.date_problem_found:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_problem_found}')
-                else:
-                    where.append(f'{variable}.{self.date_problem_found} = "{d}"')
-        if self.date_part_ordered is not None:
-            for d in self.date_part_ordered:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_part_ordered}')
-                else:
-                    where.append(f'{variable}.{self.date_part_ordered} = "{d}"')
-        if self.date_maintenance_technician_begin_repair_problem is not None:
-            for d in self.date_maintenance_technician_begin_repair_problem:
-                if d == "_":
-                    res.append(f'{variable}.{self.property_date_mt_begin_repaire_problem}')
-                else:
-                    where.append(f'{variable}.{self.property_date_mt_begin_repaire_problem} = "{d}"')
-
-        return where, res
+    # def cypher_kpi(self, variable="issue"):
+    #
+    #     match = f'MATCH (issue {NodeIssue.LABEL_ISSUE.value})'
+    #     where, res = self.cypher_where_properties(variable=variable)
+    #
+    #     return match, " OR ".join(where), res
+    #
+    # def cypher_where_properties(self, variable="issue"):
+    #     where = []
+    #     res = []
+    #     if self.problem is not None:
+    #         for p in self.problem:
+    #             if p == "_":
+    #                 res.append(f'{variable}.{self.property_problem}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_problem} = "{p}"')
+    #     if self.solution is not None:
+    #         for s in self.solution:
+    #             if s == "_":
+    #                 res.append(f'{variable}.{self.property_solution}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_solution} = "{s}"')
+    #     if self.cause is not None:
+    #         for c in self.cause:
+    #             if c == "_":
+    #                 res.append(f'{variable}.{self.property_cause}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_cause} = "{c}"')
+    #     if self.effects is not None:
+    #         for e in self.effects:
+    #             if e == "_":
+    #                 res.append(f'{variable}.{self.property_effects}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_effects} = "{e}"')
+    #     if self.part_in_process is not None:
+    #         for p in self.part_in_process:
+    #             if p == "_":
+    #                 res.append(f'{variable}.{self.property_part_in_process}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_part_in_process} = "{p}"')
+    #     if self.necessary_part is not None:
+    #         for n in self.necessary_part:
+    #             if n == "_":
+    #                 res.append(f'{variable}.{self.property_necessary_part}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_necessary_part} = "{n}"')
+    #     if self.machine_down is not None:
+    #         for d in self.machine_down:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_machine_down}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_machine_down} = {self.machine_down}')
+    #     if self.date_machine_down is not None:
+    #         for d in self.date_machine_down:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_machine_down}')
+    #             else:
+    #                 where.append(f'{variable}.{self.date_machine_down} = "{d}"')
+    #     if self.date_machine_up is not None:
+    #         for d in self.date_machine_up:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_machine_up}')
+    #             else:
+    #                 where.append(f'{variable}.{self.date_machine_up} = "{d}"')
+    #     if self.date_maintenance_work_order_close is not None:
+    #         for d in self.date_maintenance_work_order_close:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_mwo_close}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_date_mwo_close} = "{d}"')
+    #     if self.date_maintenance_work_order_issue is not None:
+    #         for d in self.date_maintenance_work_order_issue:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_mwo_issue}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_date_mwo_issue} = "{d}"')
+    #     if self.date_maintenance_technician_arrives is not None:
+    #         for d in self.date_maintenance_technician_arrives:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_mt_arrives}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_date_mt_arrives} = "{d}"')
+    #     if self.date_problem_solved is not None:
+    #         for d in self.date_problem_solved:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_problem_solved}')
+    #             else:
+    #                 where.append(f'{variable}.{self.date_problem_solved} = "{d}"')
+    #     if self.date_problem_found is not None:
+    #         for d in self.date_problem_found:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_problem_found}')
+    #             else:
+    #                 where.append(f'{variable}.{self.date_problem_found} = "{d}"')
+    #     if self.date_part_ordered is not None:
+    #         for d in self.date_part_ordered:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_part_ordered}')
+    #             else:
+    #                 where.append(f'{variable}.{self.date_part_ordered} = "{d}"')
+    #     if self.date_maintenance_technician_begin_repair_problem is not None:
+    #         for d in self.date_maintenance_technician_begin_repair_problem:
+    #             if d == "_":
+    #                 res.append(f'{variable}.{self.property_date_mt_begin_repaire_problem}')
+    #             else:
+    #                 where.append(f'{variable}.{self.property_date_mt_begin_repaire_problem} = "{d}"')
+    #
+    #     return where, res

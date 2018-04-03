@@ -10,10 +10,10 @@ issue:
   date_machine_down: Md
   date_workorder_start : Wd
   date_maintenance_technician_arrive: Td
-  date_problem_found: Sd
+  date_solution_found: Sd
   date_part_ordered: Pd
   date_part_received: Pu
-  date_problem_solve: Su
+  date_solution_solve: Su
   date_machine_up: Mu
   date_workorder_completion : Wu
 

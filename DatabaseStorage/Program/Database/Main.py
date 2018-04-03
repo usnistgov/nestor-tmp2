@@ -638,15 +638,29 @@ def graphDatabase_from_TaggedCSV(database, dataframe, propertyToHeader_dict, dat
     for index, row in dataframe.iterrows():
 
         # creat the objects
+        issue = create_issue(row, propertyToHeader_dict['issue'])
         machine = create_machine(row, propertyToHeader_dict['machine'])
         operators = create_operators(row, propertyToHeader_dict['operator'])
         technicians = create_technicians(row, propertyToHeader_dict['technician'])
-        issue = create_issue(row, propertyToHeader_dict['issue'])
         items = create_items(row, propertyToHeader_dict['item'])
         problems = create_problems(row, propertyToHeader_dict['problem'])
         solutions = create_solutions(row, propertyToHeader_dict['solution'])
         unknowns = create_unknowns(row, propertyToHeader_dict['unknown'])
         problemItems = create_problemItems(row, propertyToHeader_dict['problemitem'])
         solutionItems = create_solutionItems(row, propertyToHeader_dict['solutionitem'])
+        #create a Maintenance Work Order object from the object above
+        mwo = MaintenanceWorkOrder(issue = issue,
+                                   machine = machine,
+                                   operators = operators,
+                                   technicians = technicians,
+                                   tag_items = items,
+                                   tag_problems = problems,
+                                   tag_solutions = solutions,
+                                   tag_unknowns = unknowns,
+                                   tag_problemItems = problemItems,
+                                   tag_solutionsItems = solutionItems,
+                                   databaseInfo=databaseSchema_dict
+        )
+        print(mwo.cypher_mwo_createGraphData())
 
     return dataframe

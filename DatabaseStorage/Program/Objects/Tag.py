@@ -487,13 +487,13 @@ class TagProblemItem(TagNGram):
                f"Synonyms: {self.synonyms}\n\t" \
                f"similarTo: {self.similarTo}\n\t" \
 
-    def cypher_problemitemTag_keyword(self, variable="problemitem_tag"):
+    def cypher_problemItemTag_keyword(self, variable="problemitem_tag"):
         if self.keyword is None:
             return ""
         return f'({variable} {self.databaseInfoTag["label"]["tag"]}{self.databaseInfoTag["label"]["ngram"]}{self.databaseInfoTag["label"]["problem_item"]}' + \
                "{" + f'{self.databaseInfoTag["properties"]["keyword"]}:"{self.keyword}"' + "})"
 
-    def cypher_problemitemTag_all(self, variable="problemitem_tag"):
+    def cypher_problemItemTag_all(self, variable="problemitem_tag"):
         query = f'({variable} {self.databaseInfoTag["label"]["tag"]}{self.databaseInfoTag["label"]["ngram"]}{self.databaseInfoTag["label"]["problem_item"]}'
         if self.keyword or self.synonyms is not None:
             query += "{"
@@ -504,7 +504,7 @@ class TagProblemItem(TagNGram):
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_problemitemTag_createNode(self, variable="problemitem_tag"):
+    def cypher_problemItemTag_createNode(self, variable="problemitem_tag"):
         if self.cypher_tag_createNode(variable) == "":
             return ""
         query = self.cypher_nGramTag_createNode(variable)
@@ -522,13 +522,13 @@ class TagSolutionItem(TagNGram):
                f"Synonyms: {self.synonyms}\n\t" \
                f"similarTo: {self.similarTo}\n\t" \
 
-    def cypher_solutionitemTag_keyword(self, variable="solutionitem_tag"):
+    def cypher_solutionItemTag_keyword(self, variable="solutionitem_tag"):
         if self.keyword is None:
             return ""
         return f'({variable} {self.databaseInfoTag["label"]["tag"]}{self.databaseInfoTag["label"]["ngram"]}{self.databaseInfoTag["label"]["solution_item"]}' + \
                "{" + f'{self.databaseInfoTag["properties"]["keyword"]}:"{self.keyword}"' + "})"
 
-    def cypher_solutionitemTag_all(self, variable="solutionitem_tag"):
+    def cypher_solutionItemTag_all(self, variable="solutionitem_tag"):
         query = f'({variable} {self.databaseInfoTag["label"]["tag"]}{self.databaseInfoTag["label"]["ngram"]}{self.databaseInfoTag["label"]["solution_item"]}'
         if self.keyword or self.synonyms is not None:
             query += "{"
@@ -539,7 +539,7 @@ class TagSolutionItem(TagNGram):
             query = query[:-1] + "}"
         return query + ")"
 
-    def cypher_solutionitemTag_createNode(self, variable="solutionitem_tag"):
+    def cypher_solutionItemTag_createNode(self, variable="solutionitem_tag"):
         if self.cypher_tag_createNode(variable) == "":
             return ""
         query = self.cypher_nGramTag_createNode(variable)

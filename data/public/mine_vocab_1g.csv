@@ -91,7 +91,7 @@ belt,I,belt,,0.002456892438117843
 shroud,I,shroud,,0.0024482337341993512
 cooler,I,cooler,,0.002427285217127971
 access,I,access,,0.0024235448610427012
-crowd,U,crowd,"I don't know this dataset well enough to say what this is...
+crowd,U,crowd,"I don't know this dataset well enough to say what this is...
 ",0.002422741823672964
 clam,I,clamp,"I am going to assume this meant clamp, not ""clam""",0.002416272502522685
 fitting,I,fitting,,0.0023777333520946173
@@ -107,13 +107,13 @@ adaptor,I,adaptor,,0.002068923988804351
 rear,I,rear,,0.002048399801625595
 damage,P,damage,,0.0020000916693878735
 power,U,power,,0.0019668850694762106
-hp,U,hp,"could be horsepower or high pressure
+hp,U,hp,"could be horsepower or high pressure
 ",0.0019662829585321705
 coming,X,coming,,0.0019599574789587386
 tip,I,tip,,0.001953741464275416
 clamp,I,clamp,"I am going to assume this meant clamp, not ""clam""",0.0019492800264083977
 way,X,way,,0.001946141334818707
-block,U,block,"""engine block"" vs ""to Block""
+block,U,block,"""engine block"" vs ""to Block""
 ",0.0019456668420887472
 rhs,I,right_hand,,0.0019280708214404981
 damaged,P,damage,,0.0018650214625889913
@@ -129,7 +129,7 @@ gauge,I,gauge,,0.00173325994159758
 crack,P,cracked,,0.0017046512613763064
 lhs,I,left_hand,,0.0017043401067527867
 acc,U,acc,accumulator vs access,0.0016706500723624865
-propel,U,propel,"this is unknown because i am not sure of the dataset
+propel,U,propel,"this is unknown because i am not sure of the dataset
 ",0.0016545494159060105
 overheating,P,overheating,,0.0016433390339242314
 cracks,P,cracked,,0.0016410517142286482
@@ -144,7 +144,7 @@ suppression,I,suppression,,0.0014807548784677956
 cover,I,cover,,0.00142772729894483
 seals,I,seal,,0.001409794377857502
 handrail,I,handrail,,0.00139612959917769
-return,U,return,"a return line vs to return
+return,U,return,"a return line vs to return
 ",0.0013914833986127088
 outer,I,outer,,0.0013808008764266018
 cleaners,S,cleaners,,0.0013706591155180528
@@ -197,7 +197,7 @@ remove,S,remove,,0.000972519101744724
 sender,I,sender,,0.0009709153393402748
 solenoid,I,solenoid,,0.0009677375486942324
 weld,I,welding,,0.000954701797534828
-mcv,I,mcv,"assuming an item, but i dont know this acronym
+mcv,I,mcv,"assuming an item, but i dont know this acronym
 ",0.000951942794581525
 bent,P,bent,,0.0009431181877000149
 rail,I,rail,,0.0009338831674473305
@@ -206,7 +206,7 @@ wiring,I,wire,,0.0009103089194226019
 getting,U,getting,getting something vs not getting something,0.0009096087474279613
 chip,P,chip,"going to assume this is a problem, not an item",0.0009059981637630168
 adjuster,U,adjuster,i dont know if this can be an item with this dataset,0.0009058039928963594
-blocks,U,block,"""engine block"" vs ""to Block""
+blocks,U,block,"""engine block"" vs ""to Block""
 ",0.0009043614995820653
 cond,U,cond,not sure,0.0009011609011967123
 cleaner,S,cleaners,,0.0008990226548465444
@@ -235,7 +235,7 @@ wear,P,wear,,0.0007898004028348456
 pumps,I,pump,,0.0007884574193515778
 batteries,I,battery,,0.0007829487186409139
 charge,U,charge,will not charge vs to charge,0.000779651650777243
-press,I,press,"im going to assume this is something like ""a press"" not pressure
+press,I,press,"im going to assume this is something like ""a press"" not pressure
 ",0.0007792732612075063
 aftercooler,I,aftercooler,,0.0007734106784698627
 timer,I,timer,,0.0007726419455809906
@@ -294,7 +294,7 @@ chubb,I,chubb,i think?,0.0006257509087080576
 stair,I,stairs,,0.0006232811490811205
 valves,I,valve,,0.0006229377256084128
 scv,I,scv,idk,0.0006208653647482559
-load,U,load,"to load vs will not load
+load,U,load,"to load vs will not load
 ",0.0006184209216005147
 adjust,S,adjust,,0.000617775198793011
 rails,I,rail,,0.000608088139939313
@@ -312,7 +312,7 @@ requires,P,require,,0.0005838883536621657
 busted,P,bust,,0.0005838337027828102
 windscreen,I,windscreen,,0.0005834042628470897
 safety,I,safety,,0.0005830350499801928
-p2,I,p2,"idk
+p2,I,p2,"idk
 ",0.0005801419754767207
 suction,I,suction,,0.0005795784331599702
 recharge,S,recharge,,0.0005766403155252077
@@ -357,7 +357,7 @@ head,I,head,,0.000475395014004231
 tips,I,tip,,0.00047404768546826755
 verti,I,vertical,i think,0.000471633363220405
 ac,I,air_conditioning,,0.00047140904632172337
-walking,U,walking,"im just not sure what this could mean in the data
+walking,U,walking,"im just not sure what this could mean in the data
 ",0.0004697249784832888
 card,I,card,,0.00046889867814352287
 faults,P,fault,,0.00046716214905240917
@@ -374,9 +374,9 @@ gland,I,gland,,0.00044864395813087676
 covers,I,cover,,0.0004453359887508723
 running,U,run,by itself it means nothing,0.0004450659373585839
 labour,I,labor,,0.00044338856552914816
-ex,U,ex,no idea ,0.00044255942357687684
+ex,U,ex,no idea ,0.0004425594235768768
 comm,U,comm,don't know,0.0004400800778428915
-spline,I,spline,,0.0004386849945186229
+spline,I,spline,,0.00043868499451862284
 coolers,I,cooler,,0.0004358480227712939
 alternator,I,alternator,,0.0004356392126920096
 blocked,P,block,,0.0004352590461856431
@@ -385,7 +385,7 @@ noisy,P,noisy,,0.0004337184622406658
 coupling,I,coupling,,0.0004326095418479047
 overflow,P,overflow,,0.0004303375654138697
 fell,P,fell,,0.0004268886778601189
-bleed,U,bleed,"can bleed something as a solution vs something is bleeding as a problem, i think it is soln though",0.0004222691081942741
+bleed,U,bleed,"can bleed something as a solution vs something is bleeding as a problem, i think it is soln though",0.00042226910819427414
 package,I,package,,0.0004184440060064404
 flat,U,flat,idk,0.0004174827775019165
 weeping,P,weep,,0.0004138004003843029
@@ -415,27 +415,27 @@ reserve,I,reserve,,0.0003860812335654823
 operators,I,operator,,0.0003856193217518293
 sos,I,sos,idk,0.00038318099428308046
 outside,I,outside,,0.0003827808076749318
-lts,I,lts,no idea but i assume an item,0.00038229862600359666
+lts,I,lts,no idea but i assume an item,0.0003822986260035967
 split,P,split,i think,0.00038186131188208434
 foot,I,foot,,0.00038150426819509874
-hosing,I,hose,,0.0003802411632570821
+hosing,I,hose,,0.00038024116325708214
 shrouds,I,shroud,,0.0003794439525176377
 caps,I,cap,,0.00037567513498544265
 tighten,S,tighten,,0.0003743258564430805
 base,I,base,,0.00037369575506844414
-worn,P,wear,,0.00037009701263037586
+worn,P,wear,,0.0003700970126303759
 upper,I,upper,,0.0003668578614628128
 platform,I,platform,,0.00036597776616135536
 cylinders,I,cylinder,,0.0003655967246942304
 extinguisher,I,extinguisher,,0.00036553929034402656
-inspect,S,inspect,,0.0003653565869890365
+inspect,S,inspect,,0.00036535658698903654
 board,I,board,,0.00036324402926944687
 adjusting,S,adjust,,0.0003615843413057138
 plugs,I,plug,,0.0003593242869243067
-button,I,button,,0.00035925537818622637
+button,I,button,,0.0003592553781862264
 auto,I,auto,,0.00035749732476370364
 battery,I,battery,,0.0003559527677328091
-pms,I,pms,"prevantive maintenance
+pms,I,pms,"prevantive maintenance
 ",0.0003557689118004785
 reported,S,report,,0.0003546523082460699
 operator,I,operator,,0.00035405363863331204
@@ -453,7 +453,7 @@ ros,I,ros,idk,0.0003422398339110051
 inside,I,inside,,0.00034204728164093995
 rewire,S,rewire,,0.00034174183984259413
 heads,I,head,,0.0003416954382771791
-overtemp,P,overtemp,,0.0003408457066142981
+overtemp,P,overtemp,,0.00034084570661429815
 guage,I,gauge,,0.0003386668098337388
 no3,I,no,,0.00033864974619241466
 hands,I,hand,,0.00033738225090771155
@@ -472,7 +472,7 @@ rope,I,rope,,0.00032667413462686835
 cabinet,I,cabinet,,0.0003251246972761209
 operation,I,operation,,0.0003234831627480103
 carrier,I,carrier,,0.00032290325521384326
-bypass,U,bypass,"could be a bypass valve or ""to bypass"" something
+bypass,U,bypass,"could be a bypass valve or ""to bypass"" something
 ",0.00032218627194838235
 restart,S,restart,,0.000319790878142302
 misc,I,misc,,0.0003193522328784589
@@ -513,10 +513,10 @@ revs,I,revs,,0.00028190619920738725
 mufflers,I,muffler,,0.00028140137989273454
 releasing,S,releasing,,0.00028127323888567146
 mtr,I,motor,,0.0002797479944404181
-cutting,I,cutting,"i would think a cutting tool but it might be something is cutting something when it is   not supposed to
+cutting,I,cutting,"i would think a cutting tool but it might be something is cutting something when it is   not supposed to
 ",0.0002790973539230672
 throttle,I,throttle,,0.00027634792377188985
-vee,U,vee,"not sure
+vee,U,vee,"not sure
 ",0.00027589629612937875
 using,P,using,,0.0002747463266579706
 shim,I,shim,,0.00027438004561497134
@@ -561,7 +561,7 @@ balance,I,balance,,0.0002499548620211395
 seized,P,seize,,0.000249074552636534
 flex,U,flex,,0.00024848388463747864
 vent,I,vent,,0.0002475362477925604
-ear,I,ear,,0.0002474924265858096
+ear,I,ear,,0.00024749242658580957
 charging,U,charge,will not charge vs to charge,0.00024724392480430347
 burst,P,burst,,0.0002467374831190769
 thermostats,I,thermostat,,0.0002466680743038559
@@ -622,9 +622,9 @@ point,I,point,,0.00020918082793257208
 style,I,style,,0.00020895202632121465
 receiving,U,receiving,not receiving is a problem maybe,0.0002089077390188229
 capital,I,capital,,0.0002086376915750417
-hard,U,hard,too hard maybe?,0.00020856322984788212
+hard,U,hard,too hard maybe?,0.0002085632298478821
 tramming,U,tramming,idk what this means,0.0002080456094798841
-weep,P,weep,,0.0002075289919579128
+weep,P,weep,,0.00020752899195791282
 bad,P,broken,,0.00020637714531803508
 bushes,I,bush,,0.00020513975839613364
 orings,I,oring,,0.00020428627280141183
@@ -648,11 +648,11 @@ brackets,I,bracket,,0.0001924444166689936
 station,I,station,,0.00019231690803427808
 ports,I,port,,0.000192159551232123
 riu,U,riu,no clue,0.00019188150977176056
-no4,I,no,,0.0001917935539074948
+no4,I,no,,0.00019179355390749482
 dump,I,dump,,0.00019169900543751896
 hours,I,hour,,0.00019123546150955209
 fans,I,fan,,0.00019119052427846124
-rplace,S,replace,,0.0001907201793442328
+rplace,S,replace,,0.00019072017934423281
 distributor,I,distributor,,0.0001904340194732956
 cav,U,cav,idk in mining,0.00019002584405090726
 anti,U,anti,,0.00019002584405090726
@@ -677,11 +677,11 @@ falling,P,fallen,,0.0001844855155663432
 micro,,,,0.000184083683997788
 ass,,,,0.0001833404727780617
 speakers,I,speaker,,0.0001829115413502268
-120e,,,,0.0001827286686470569
+120e,,,,0.00018272866864705692
 dist,,,,0.00018255369049730588
 linkage,I,link,,0.00018243700504782268
 torn,,,,0.0001823256766883776
-defects,P,defective,,0.0001817537787199812
+defects,P,defective,,0.00018175377871998118
 used,,,,0.00018137040514732816
 handles,I,handle,,0.0001811363379905569
 stand,,,,0.00018079802048547145
@@ -823,7 +823,7 @@ intermitent,,,,0.00013469636461035603
 proxy,,,,0.0001341435130134445
 pit,,,,0.00013406748883014512
 middle,,,,0.0001339184304982381
-walk,U,walking,"im just not sure what this could mean in the data
+walk,U,walking,"im just not sure what this could mean in the data
 ",0.00013317649453007394
 mainpump,,,,0.00013307548434815687
 operating,,,,0.0001325205155678006
@@ -993,7 +993,7 @@ wearing,P,wear,,9.025858933398697e-05
 bus,,,,9.012053551806984e-05
 ou,,,,8.983864321190552e-05
 stroking,,,,8.97543360790947e-05
-croud,U,crowd,"I don't know this dataset well enough to say what this is...
+croud,U,crowd,"I don't know this dataset well enough to say what this is...
 ",8.934353067596547e-05
 01,,,,8.90235237493297e-05
 distributors,I,distributor,,8.832942291569632e-05
@@ -1068,7 +1068,7 @@ comditioning,,,,7.942094435843338e-05
 falts,P,fault,,7.92156415779759e-05
 missimg,P,missing,,7.91725014754223e-05
 lchange,,,,7.910251817918323e-05
-cuting,I,cutting,"i would think a cutting tool but it might be something is cutting something when it is   not supposed to
+cuting,I,cutting,"i would think a cutting tool but it might be something is cutting something when it is   not supposed to
 ",7.904455423340201e-05
 realigning,,,,7.899435984102373e-05
 adjustor,,,,7.895809015710681e-05
@@ -1493,7 +1493,7 @@ solid,,,,5.965820834577199e-05
 readin,,,,5.956552538669472e-05
 actuator,,,,5.950450366511618e-05
 flap,,,,5.950450366511618e-05
-tensions,U,tension,"no tension too much tension, can tension something",5.9483858690086795e-05
+tensions,U,tension,"no tension too much tension, can tension something",5.94838586900868e-05
 requiring,,,,5.942963233982446e-05
 tight,,,,5.936079940096192e-05
 surface,,,,5.9348833835905286e-05
@@ -1721,7 +1721,7 @@ does,,,,4.9874370395784306e-05
 2009,,,,4.967545136023455e-05
 site,,,,4.967545136023455e-05
 november,,,,4.967545136023455e-05
-rhi,,,,4.96209272669418e-05
+rhi,,,,4.9620927266941795e-05
 identif,,,,4.954238931065859e-05
 fromlh,,,,4.950335424991345e-05
 spilling,,,,4.950335424991345e-05

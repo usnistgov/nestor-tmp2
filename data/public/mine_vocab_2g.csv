@@ -227,7 +227,7 @@ tooth missing,P I,tooth missing,,0.0006873413641365457
 bucket clamp,I,bucket_clamp,,0.0006746159415953562
 changeout slew,S I,changeout slew,,0.0004042540402835982
 joystick stick,P I,joystick stick,,0.0006666709870216638
-murphy gauge,I,murphy_gauge,,0.0004187120804910967
+murphy gauge,I,murphy_gauge,,0.00041871208049109666
 cracked boom,P I,cracked boom,,7.826583774516462e-05
 door latch,I,door_latch,,0.00045121583208739376
 motor guard,I,motor_guard,,0.00027107984296878654
@@ -278,8 +278,8 @@ engine repair,S I,engine repair,,0.0005856749816990724
 temp gauge,I,temperature_gauge,,0.0003513033491584456
 brake changeout,S I,,,0.0005053116599263442
 pressure low,,,,0.0006602499434762766
-air compressor,I,air_compressor,,0.0004817764947774864
-tooth broken,P I,tooth broken,,0.0003966364798973704
+air compressor,I,air_compressor,,0.00048177649477748635
+tooth broken,P I,tooth broken,,0.00039663647989737034
 getting cold,,,,0.0005907863074885237
 engine run,,,,0.00019953388346387487
 outer air,I,outer_air,,0.000584663974331823
@@ -289,7 +289,7 @@ engine starter,I,engine_starter,,0.00040526717966958537
 lube pressure,I,lube_pressure,,0.0005931216087174153
 service leg,,,,0.000634052160440416
 gauge working,,,,0.0004529759841213168
-hyd tune,S I,hyd tune,,0.00018423218001734532
+hyd tune,S I,hyd tune,,0.0001842321800173453
 fuel leak,P I,fuel leak,,0.0006164460449880284
 cooling fan,,,,0.0005717509523232491
 bolts broken,P I,bolts broken,,0.00048458926917630647
@@ -308,7 +308,7 @@ replace horn,S I,replace horn,,0.0004421803706076548
 replace damage,X,replace damage,,0.0005452676059046526
 repair way,,,,0.0005573843182083676
 roller cw,I,roller_cw,,0.0005020285428770674
-pin retainer,I,pin_retainer,,0.00024450545632965316
+pin retainer,I,pin_retainer,,0.0002445054563296532
 leak radiator,P I,leak radiator,,0.00027559489467256275
 pirtek shd,I,pirtek_shd,,0.0005408646241058405
 boom hyd,I,boom_hyd,,0.00035509144846960784
@@ -330,7 +330,7 @@ vertical step,I,vertical_step,,0.0005189383223021505
 radiator cap,I,radiator_cap,,0.0003944295639580464
 oil burn,P I,oil burn,,0.000627136572279496
 low power,,,,0.0005298963666460694
-brake hour,I,brake_hour,,0.0004074081547510229
+brake hour,I,brake_hour,,0.00040740815475102287
 bucket lube,I,bucket_lube,,0.0005243384543868246
 changeout main,,,,0.0001394584904919738
 need replace,X,need replace,,0.0005094462627954385
@@ -338,7 +338,7 @@ pre lube,,,,0.0005568517669173785
 ring bucket,I,ring_bucket,,0.000516587588242207
 rock breaker,I,rock_breaker,,0.000512068445338145
 pump chip,P I,pump chip,,0.0004966105589412587
-tooth bucket,I,tooth_bucket,,0.0003977386593178098
+tooth bucket,I,tooth_bucket,,0.00039773865931780984
 replace fuel,S I,replace fuel,,0.0005445756156326144
 clamp cylinder,I,clamp_cylinder,,6.270477650873574e-05
 temp sensor,,,,0.000397123230286244
@@ -347,7 +347,7 @@ shd hose,I,shd_hose,,0.0005064445473489268
 crowd hose,I,crowd_hose,,0.0005113601391301098
 repair camera,S I,repair camera,,0.00023793832519317798
 replace door,S I,replace door,,0.0004315975512865355
-repair door,S I,repair door,,0.00034102072065985117
+repair door,S I,repair door,,0.0003410207206598512
 cooling pump,,,,0.000433480427351455
 replace fault,X,replace fault,,0.0005614873392419779
 reseal boom,S I,reseal boom,,0.0005065509651210666
@@ -369,15 +369,15 @@ hand free,,hand free,,0.00047190173753137413
 coolant hose,I,coolant_hose,,0.00046421005010452687
 rf repair,S I,rf repair,,0.0003708315139111669
 shroud missing,P I,shroud missing,,0.000423094224296866
-hyd temp,,,,0.0002209751496948136
+hyd temp,,,,0.00022097514969481358
 fit bucket,,,,0.00046813312228069406
 seat assy,,,,0.0004643469146363133
-leak track,P I,leak track,,0.0004170902589284432
+leak track,P I,leak track,,0.00041709025892844315
 scv labor,I,scv_labor,,0.0004640360299130328
 cab pressuriser,I,cab_pressuriser,,0.00040348176727320647
 water pump,I,water_pump,,0.00048560690265119416
 repair hand,S I,repair hand,,0.0003460322924120163
-engine turbo,I,engine_turbo,,0.0004080167516523821
+engine turbo,I,engine_turbo,,0.00040801675165238213
 replace pressuriser,S I,replace pressuriser,,0.0004064885336788292
 replace clamp,S I,replace clamp,,7.249514332012678e-05
 float valve,I,float_valve,,0.0004310719231948388
@@ -388,7 +388,7 @@ tooth pin,I,tooth_pin,,0.00025711426347317044
 engine air,I,engine_air,,0.00042429634767287953
 steel tube,I,steel_tube,,0.0004588902002757844
 changeout seat,,,,0.0004799427708001693
-leak fitting,P I,leak fitting,,0.00039697900542518466
+leak fitting,P I,leak fitting,,0.0003969790054251847
 pump gearbox,I,pump_gearbox,,0.0004975911619090259
 roller warranty,I,roller_warranty,,0.00038783577222684925
 fault alarm,X,fault alarm,,0.00046339810276431535
@@ -418,7 +418,7 @@ pump contamination,P I,pump contamination,,0.00035862394760931136
 brake releasing,S I,brake releasing,,0.0001952662197061204
 pressure sender,I,pressure_sender,,0.0003646361716733455
 replace stauff,,,,0.0004198759615182636
-slew charge,,,,0.0004352761576900401
+slew charge,,,,0.00043527615769004013
 com radio,,,,0.0004301077570310543
 swing pump,I,swing_pump,,0.0003271023798804933
 replace joystick,S I,replace joystick,,0.00035690748778976697
@@ -435,7 +435,7 @@ lube alarm,P I,lube alarm,,0.00035563978088013214
 hose engine,I,hose_engine,,0.0002922702547295135
 engine cooler,I,engine_cooler,,0.0002692208803052033
 bolts missing,P I,bolts missing,,0.000129942496502585
-motor seal,I,motor_seal,,0.0003801554028691512
+motor seal,I,motor_seal,,0.00038015540286915115
 hose text,I,hose_text,,0.00032529769057321363
 light coming,,,,0.00041367437751024436
 servo lever,I,servo_lever,,0.0004253682891200446
@@ -448,11 +448,11 @@ lost lip,P I,lost lip,,0.0004148995169797705
 roller broken,P I,roller broken,,0.00041086850883405887
 step handrail,I,step_handrail,,7.033633558151747e-05
 maintenance light,I,maintenance_light,,0.000302210357430185
-new tooth,I,new_tooth,,0.0003005014725518144
+new tooth,I,new_tooth,,0.00030050147255181436
 filter block,P I,filter block,,0.00028512874904535807
 bucket hose,I,bucket_hose,,0.0002784208573096978
 warranty left_hand,I,warranty_left_hand,,0.00018899061986927008
-cracked left_hand,P I,cracked left_hand,,0.00042912398538473437
+cracked left_hand,P I,cracked left_hand,,0.0004291239853847344
 wiper blade,I,wiper_blade,,0.00028197198094690086
 tooth fallen,P I,tooth fallen,,0.0004056180955084877
 shroud pin,I,shroud_pin,,0.00035284523714742004
@@ -491,7 +491,7 @@ fuel solenoid,I,fuel_solenoid,,0.0002675441274214688
 repair emergency,X,repair emergency,,0.00031185586898838574
 fabricate fit,S I,fabricate fit,,0.0003766430958860453
 cab window,I,cab_window,,0.0003992550832412948
-replace crowd,,,,0.00040535114699810583
+replace crowd,,,,0.0004053511469981058
 blown seal,P I,blown seal,,0.0003787804154370026
 pump shd,I,pump_shd,,0.00037835581578388687
 getting hot,,,,0.0003869493248954985
@@ -524,7 +524,7 @@ repair shd,S I,repair shd,,0.0003681389167361351
 left_hand air,I,left_hand_air,,0.00035108596827043616
 hose seal,I,hose_seal,,0.00023586722236053925
 lube leak,P I,lube leak,,0.00036388699490173137
-leak final,P I,leak final,,0.0002197561809483185
+leak final,P I,leak final,,0.00021975618094831852
 left_hand turbo,I,left_hand_turbo,,0.0003557146721593064
 boom cracked,P I,boom cracked,,0.00036559666340204536
 fault line,P I,fault line,,0.000360845334456515
@@ -575,7 +575,7 @@ main lube,,,,0.0003523665169898632
 limit switch,I,limit_switch,,0.00034752206059826345
 replace p4,S I,replace p4,,0.000350428248936381
 leak fuel,P I,leak fuel,,0.00026570320837992904
-power step,,,,0.0003355684090182104
+power step,,,,0.00033556840901821037
 leak cab,P I,leak cab,,0.0001789907061658933
 right_hand servo,I,right_hand_servo,,0.00032933123531679885
 repair step,S I,repair step,,0.0001618397422157373
@@ -620,7 +620,7 @@ broken exhaust,P I,broken exhaust,,0.0003129171326075273
 replace pump,S I,replace pump,,0.00031019167879389005
 wiper working,,,,8.412390162413304e-05
 boom float,I,boom_float,,0.00034349604877434496
-bolts slew,I,bolts_slew,,0.0002544170647157616
+bolts slew,I,bolts_slew,,0.00025441706471576156
 boom lift,I,boom_lift,,0.00031601408081829237
 cylinder rod,I,cylinder_rod,,0.00030812224073408087
 cracked mount,P I,cracked mount,,0.0001766242457373062
@@ -905,7 +905,7 @@ oil press,I,,,0.0002211614941983777
 repair material,,,,0.00026944737213893444
 drive contamination,P I,,,0.0002273384810210324
 quote repair,S I,,,0.00016824237884853808
-air_conditioning getting,,,,0.0002198366036335725
+air_conditioning getting,,,,0.00021983660363357252
 mounting seal,S I,,,0.0002218776439315788
 idle timer,,,,0.000227434473613338
 repair vacuum,S I,,,0.0001589532289927058
@@ -942,11 +942,11 @@ box leak,P I,,,0.00016552498367067062
 throttle control,I,,,0.00021998675279211505
 rf wire,I,,,0.00021285682149336534
 pump p2,I,,,0.00021908381107174708
-restriction hose,P I,,,0.0002174336629193398
+restriction hose,P I,,,0.00021743366291933981
 mount cracked,,,,0.0002126978681373213
 labor shd,I,,,0.0002108495833988816
 terex grease,I,,,0.00023469733074448198
-replace wire,S I,,,0.00021064459939805692
+replace wire,S I,,,0.0002106445993980569
 left_hand outer,I,,,0.0002096620601453401
 pump gearcase,I,,,0.00021725761775111867
 leak machine,P I,,,0.0002124838207166918
@@ -980,10 +980,10 @@ investigate adverse,X,,,0.00026124283103498417
 warranty replace,S I,,,8.439934228275111e-05
 repair servo,S I,,,0.0002105753019305736
 high temp,,,,0.0002162798946650775
-working properly,,,,0.00020751975667721132
+working properly,,,,0.0002075197566772113
 stick broken,X,,,0.00021558738102803984
 card fault,P I,,,0.0002024295294444165
-fault right_hand,P I,,,0.0002018845417997953
+fault right_hand,P I,,,0.00020188454179979532
 cavity seal,I,,,0.00020245683354820358
 heater valve,I,,,0.00022488262796228545
 track chain,I,,,0.0002090768286637424
@@ -1004,13 +1004,13 @@ dipstick pto,I,,,0.00020606063415121504
 pipe blown,P I,,,0.00019758141755440525
 need jump,X,,,0.00019855620695596047
 fault occurring,,,,0.00020405952906856346
-pump pressure,I,,,0.0002167967737211193
+pump pressure,I,,,0.00021679677372111932
 changeout fan,S I,,,0.0002002878837286231
 seat belt,,,,0.0002051698905314381
 wont slew,,,,0.00020502695631874874
 overhaul left_hand,S I,,,0.0002000008298030861
 blowing excessive,X,,,0.0002001719927120228
-changeout leak,X,,,0.0001996076680569453
+changeout leak,X,,,0.00019960766805694532
 broken shd,P I,,,0.00019836209907732506
 timing cover,I,,,0.00020342472572301278
 indicator leak,P I,,,0.0001981570818465483
@@ -1039,7 +1039,7 @@ engine smoke,P I,,,0.00019279073079244598
 require new,P I,,,0.00019312621970974224
 contamination pump,P I,,,0.0001998890337044576
 handrail broken,P I,,,0.0001998890337044576
-radio repair,S I,,,0.00019498886062219119
+radio repair,S I,,,0.0001949888606221912
 repair stairs,S I,,,0.00011896916259658899
 fm radio,,,,0.0001998890337044576
 noisy slew,P I,,,0.00019279073079244598
@@ -1055,9 +1055,9 @@ lip ear,I,,,0.0001877072742504051
 replace air_conditioning,S I,,,0.0001912719659583485
 pump valve,I,,,0.00019769203440858998
 cracked repair,X,,,0.00019333942865925048
-fan drive,I,,,0.00019143083447796682
+fan drive,I,,,0.0001914308344779668
 rear oil,I,,,0.00020270377867945527
-head leak,P I,,,0.00019051990104373932
+head leak,P I,,,0.0001905199010437393
 air belt,I,,,0.00019769203440858998
 missing track,P I,,,0.0001901479434849005
 line maintaining,,,,0.0001858784979849074
@@ -1069,7 +1069,7 @@ micro switch,,,,0.0001952412832708269
 pump case,I,,,0.00013006368456834857
 wont idle,,,,0.00017710118816124454
 machine slew,I,,,0.0001896406678003588
-hose complete,S I,,,0.0001876143152408152
+hose complete,S I,,,0.00018761431524081518
 bolts cab,I,,,0.00019577970309509125
 fit track,,,,0.00018644098510197128
 mech replace,S I,,,0.00018642335402357889
@@ -1100,14 +1100,14 @@ clamp pin,I,,,0.0002020598946049531
 ladder rope,I,,,0.0001812787489926005
 seal contamination,P I,,,0.00018669887054027684
 replace seat,,,,0.0001248687229318743
-step light,I,,,0.00020751975667721132
+step light,I,,,0.0002075197566772113
 guard left_hand,I,,,0.00012187723908011202
 p1 changeout,S I,,,0.0001857389145879781
 pump p1,I,,,0.0001857389145879781
 wash engine,S I,,,0.0001818634349251156
 left_hand fan,I,,,0.0001820294811974712
 bolts right_hand,I,,,0.00018184574642838856
-servo switch,I,,,0.0002146530926558069
+servo switch,I,,,0.00021465309265580692
 boom crowd,,,,6.913258729204708e-05
 servo screen,I,,,0.00011724489174551535
 leak filter,P I,,,0.00018017210152729762
@@ -1120,7 +1120,7 @@ crowd line,,,,0.00020225605708292784
 compressor seize,P I,,,0.0001781935274728329
 gearbox pump,I,,,0.00018488556839531842
 broken right_hand,P I,,,0.00018000739282210277
-aftercooler blown,P I,,,0.00018423218001734532
+aftercooler blown,P I,,,0.0001842321800173453
 gauge cab,I,,,0.00017860747962424923
 major grease,,,,0.00018300612452740533
 greased load,,,,0.00018297053841035337
@@ -1153,7 +1153,7 @@ windscreen cracked,P I,,,0.00018765604064699398
 cylinder changeout,S I,,,0.00017548887781385395
 speed sensor,I,,,0.0001927132492188614
 bolts left_hand,I,,,0.00017536548668126332
-sensor plug,I,,,0.0001892217392430358
+sensor plug,I,,,0.00018922173924303581
 screen housing,I,,,0.00011724489174551535
 lower crowd,,,,0.00018458733909184184
 engine timer,I,,,9.99280522411916e-05
@@ -1174,7 +1174,7 @@ seat adjust,,,,0.00017146945172246642
 screen leak,P I,,,0.00017342448407890778
 drain line,I,,,0.0001847498600192861
 replace swing,S I,,,0.00017665271261775359
-seat base,,,,0.0001864630215196809
+seat base,,,,0.00018646302151968091
 replace vertical,S I,,,0.00016883933823860702
 water temp,,,,0.00018289584563470384
 audit bucket,S I,,,0.00017043759302436947
@@ -1191,7 +1191,7 @@ damage repair,X,,,5.8451529439260147e-05
 power way,,,,0.0001868392979336969
 boarding ladder,,,,0.0001761881521897043
 replace right,S I,,,0.00017672179970473369
-refit tooth,,,,0.00018423218001734532
+refit tooth,,,,0.0001842321800173453
 service shd,,,,7.644507251652885e-05
 fitter boily,,,,0.00016945199342037495
 latch left_hand,I,,,0.00017067871580901754
@@ -1227,7 +1227,7 @@ misc electrical,I,,,0.0001721155874443195
 outer filter,I,,,0.00016789626558857368
 hose come,,,,0.0001721155874443195
 pump sensor,I,,,0.00018245229227699286
-tank sender,I,,,0.00011228106418365041
+tank sender,I,,,0.0001122810641836504
 tooth locking,P I,,,9.352847280023258e-05
 block air,P I,,,0.00016578384700543847
 air cons,,,,0.00017037386612741477
@@ -1236,7 +1236,7 @@ instrument light,I,,,0.00016730894758889574
 hose holed,,,,0.000177595564282173
 new style,I,,,0.00017962620469741207
 leak pot,P I,,,0.00015205646594802392
-window catch,,,,0.0002084231576161352
+window catch,,,,0.00020842315761613518
 pressuriser filter,I,,,9.143117262003514e-05
 shd pto,I,,,0.00016560328919941716
 suppression low,,,,0.00016967984259328838
@@ -1508,7 +1508,7 @@ pressure cut,,,,0.0001373702868354658
 right_hand propel,,,,0.0001431123435394645
 replace safety,S I,,,0.000146182888528625
 slow shd,P I,,,0.00014259929295972037
-unit working,,,,0.00018423218001734532
+unit working,,,,0.0001842321800173453
 clamp pedal,I,,,0.0001417198519923724
 dash light,I,,,0.00015787232722678376
 cold shd,,,,0.000140252128694761
@@ -1684,7 +1684,7 @@ seperator filter,,,,0.00013400611171642468
 cable repair,S I,,,0.00013400611171642468
 meter working,,,,0.00013737375610081001
 water seperator,,,,0.00015281077967453803
-right_hand roller,I,,,0.00013400590051027459
+right_hand roller,I,,,0.0001340059005102746
 tank hose,I,,,0.00013152351104626846
 inner outer,I,,,0.00013639799445220853
 bolts stauff,,,,0.00012781771467322884
@@ -1698,7 +1698,7 @@ room light,I,,,6.704192277942016e-05
 return pipe,,,,8.412390162413304e-05
 pilot valve,I,,,0.00013187619553707122
 broken hyd,P I,,,9.236142361818826e-05
-stick tube,P I,,,0.0001327799260855558
+stick tube,P I,,,0.00013277992608555579
 right_hand brake,I,,,0.00013266213366416123
 plate welded,S I,,,6.868687805040501e-05
 mounting gasket,S I,,,0.00013559125060379594
@@ -2228,7 +2228,7 @@ cleaners block,X,,,9.589738713573316e-05
 prelube pump,S I,,,9.823305012807474e-05
 seal pump,I,,,9.823305012807474e-05
 stairs broken,P I,,,9.866604276440368e-05
-track loose,P I,,,9.800070731503721e-05
+track loose,P I,,,9.80007073150372e-05
 slow left_hand,P I,,,9.624729733386284e-05
 bucket components,,,,9.644477738053352e-05
 slew overtemp,P I,,,7.52838213780312e-05
@@ -2245,8 +2245,8 @@ checkout grease,,,,0.00011896916259658899
 undercarriage grease,I,,,9.74987852288327e-05
 replace motor,S I,,,9.823305012807474e-05
 deck rusted,,,,9.823305012807474e-05
-pump overheating,P I,,,9.775637871437621e-05
-drive temp,,,,9.800070731503721e-05
+pump overheating,P I,,,9.77563787143762e-05
+drive temp,,,,9.80007073150372e-05
 damage horn,P I,,,9.72264311821268e-05
 service centrifugal,,,,9.468506491765562e-05
 spare header,I,,,7.52838213780312e-05
@@ -3337,7 +3337,7 @@ blowing slew,P I,,,7.343561630419219e-05
 solenoid relay,I,,,7.57482481198497e-05
 shd gear,I,,,7.379051739595843e-05
 cabinet fan,I,,,7.378725161906208e-05
-x15 cabinet,I,,,9.775637871437621e-05
+x15 cabinet,I,,,9.77563787143762e-05
 radiator fan,I,,,7.528847174360051e-05
 pump thermostat,I,,,7.293647177964403e-05
 pump hour,I,,,7.306339374237627e-05

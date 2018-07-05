@@ -1,0 +1,10 @@
+chardet==3.0.4
+fuzzywuzzy==0.16.0
+matplotlib==2.2.2
+numpy==1.14.2
+pandas==0.22.0
+python-Levenshtein==0.12.0
+PyYAML==3.12
+scikit-learn==0.19.1
+seaborn==0.8.1
+tqdm==4.23.0

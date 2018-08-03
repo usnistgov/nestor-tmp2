@@ -1,2 +1,0 @@
-bokeh
-holoviews>=1.10

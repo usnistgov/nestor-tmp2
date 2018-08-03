@@ -1,7 +1,0 @@
-pyqt5
-pyyaml
-chardet
-seaborn>=0.8.1
-matplotlib>=2.2.2
-fuzzywuzzy
-python-levenshtein

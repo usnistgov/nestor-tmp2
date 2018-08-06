@@ -1,4 +1,15 @@
 numpy>=1.14.2
 pandas>=0.22.0
+tables
 scikit-learn
 tqdm
+bokeh
+holoviews>=1.10
+pyqt5
+pyyaml
+chardet
+seaborn>=0.8.1
+matplotlib>=2.2.2
+fuzzywuzzy
+python-levenshtein
+networkx>=2.0

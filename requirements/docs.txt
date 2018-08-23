@@ -4,3 +4,4 @@ nbsphinx>=0.3.3
 sphinxcontrib-bibtex>=0.4.0
 numpydoc
 ipython
+m2r
